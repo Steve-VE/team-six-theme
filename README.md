@@ -4,19 +4,11 @@
 
 ## Equipe n°6 :
 
-<<<<<<< HEAD
-- steveVe
-- phennaux
-- danielmuyshond
-- felicienmanzi
-- bernardjacques
-=======
 - [steveVe](https://github.com/Steve-VE)
 - [phennaux](https://github.com/PHennaux115)
 - [danielmuyshond](https://github.com/dmshd)
 - [felicienmanzi](https://github.com/gitmanfel)
 - [bernardjacques](https://github.com/Bernardjacques)
->>>>>>> steve
 
 ====================  Date de début : *26 Mars 2018*  ==================
 

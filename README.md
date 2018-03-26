@@ -1,20 +1,20 @@
 # FooDog
 
-======================  Projet Wordpress : FooDog ===================
+======================= Projet Wordpress : FooDog =====================
 
 Equipe n°6 :
 
--steveVe
--phennaux
--danielmuyshond
--felicienmanzi
--bernardjacques
+- Steve Van Essche -  [https://github.com/Steve-VE](https://github.com/Steve-VE)
+- Philippe Hennaux -  [https://github.com/PHennaux115](https://github.com/PHennaux115)
+- Daniel Muyshond -  [https://github.com/dmshd](https://github.com/dmshd)
+- Félicien Manzi - [https://github.com/gitmanfel](https://github.com/gitmanfel)
+- Jacques Bernard - [https://github.com/Bernardjacques](https://github.com/Bernardjacques)
 
-====================  Date de début : 26 Mars 2018  ==================
+======================= Date de début : 26 Mars 2018 ==================
 
 
-26 mars 
-  - Création du repo
+*Lundi 26 mars*
+  - Mise en place GitHub
   - Mise en place Trello
   - Installation de Wordpress
   - Recherche de thême concordant
@@ -24,4 +24,4 @@ Equipe n°6 :
   
 ======================== Date de fin : xx xx 2018 =====================
 
-======================== Deadline : 11 04 2018 09:00 =====================
+======================== Deadline : 11 04 2018 09:00 ==================

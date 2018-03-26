@@ -4,11 +4,11 @@
 
 Equipe n°6 :
 
--steveVe
--phennaux
--danielmuyshond
--felicienmanzi
--bernardjacques
+- steveVe
+- phennaux
+- danielmuyshond
+- felicienmanzi
+- bernardjacques
 
 ====================  Date de début : 26 Mars 2018  ==================
 

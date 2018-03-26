@@ -8,3 +8,10 @@ Template: magazine-o
 */
 
 @import url("../magazine-o/style.css");
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Open+Sans:400,600,700,800');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Crimson Text', serif;
+*/

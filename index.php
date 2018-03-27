@@ -1,10 +1,12 @@
 <?php
-get_header();
+// get_header();
 ?>
 
+<!-- Voir le fichier 'page.php'
 <main>
-</main>
+    Bibi
+</main> -->
 
 <?php
-get_footer();
+// get_footer();
 ?>

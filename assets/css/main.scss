@@ -4,61 +4,152 @@
     padding: 0px;
 }
 
-header
-{
-    img
-    {
-        width: 200px;
-        height: 200px;
-    }
-    ul
-    {
-        list-style-type: none;
-    }
-}
-
-
-
 .primary
 {
-    float: left;
-
+    margin-top: 50px;
+    height: 600px;
     .main_article
     {
+        float: left;
         margin-left: 75px;
 
         & > img
         {
-            width: 500px;
+            width: 600px;
             height: 450px;
+            margin-right: 25px;
         }
 
         .tag
         {
-            width: 500px;
             text-align: center;
             line-height: 3em;
             font-size: 0.8em;
             font-weight: 900;
+            margin-right: 25px;
             color: #ff8768;
         }
 
         h2
         {
             margin-bottom: 50px;
+            margin-right: 25px;
             text-align: center;
-            width: 500px;
             color: rgb(104, 104, 104);
         }
     }
 
     .secondary_articles
     {
-        width: 250px;
+        float: left;
+        width: 500px;
+
+        &>div
+        {
+            width: 250px;
+            float: left;
+            img
+            {
+                width: 90%;
+                height: auto;
+            }
+
+            h3
+            {
+                font-size: 1rem;
+                color: rgb(72, 72, 72);
+                width: 95%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+.featured_posts
+{
+    float: left;
+    width: 70%;
+
+    h2
+    {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    
+    .post
+    {
+        float: left;
+
         img
         {
-            width: 100px;
-            height: auto;
+            float: left;
+            width: 40%;
+            margin-right: 50px;
+        }
+
+        .post_details
+        {
+            width: 30%;
+            float: left;
+            height: 350px;
+
+            .tags
+            {
+                width: 200px;
+                font-weight: 900;
+                color: #ff8768;
+                margin-bottom: 20px;
+                border-right: 1px solid lightgrey;
+                width: fit-content;
+            }
+
+            h3
+            {
+                line-height: 25px;
+                font-size: 1.5rem;
+                margin-bottom: 25px;
+                color: rgb(63, 63, 63);
+            }
+        }
+    }
+}
+
+.latest_posts
+{
+    float: left;
+    width: 80%;
+
+    .row
+    {
+        margin-left: 25px;
+
+        .post
+        {
+            width: 40%;
+            float: left;
+            margin-left: 25px;
+
+            img
+            {
+                width: 95%;
+            }
+
+            .featured_details
+            {
+                text-align: center;
+                height: 200px;
+
+                .tag
+                {
+                    width: 200px;
+                    font-weight: 900;
+                    color: #ff8768;
+                    margin-bottom: 20px;
+                    border-right: 1px solid lightgrey;
+                    width: fit-content;
+                }
+            }
         }
     }
 }

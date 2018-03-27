@@ -3,50 +3,133 @@
   padding: 0px;
 }
 
-header img {
-  width: 200px;
-  height: 200px;
-}
-
-header ul {
-  list-style-type: none;
-}
-
 .primary {
-  float: left;
+  margin-top: 50px;
+  height: 600px;
 }
 
 .primary .main_article {
+  float: left;
   margin-left: 75px;
 }
 
 .primary .main_article > img {
-  width: 500px;
+  width: 600px;
   height: 450px;
+  margin-right: 25px;
 }
 
 .primary .main_article .tag {
-  width: 500px;
   text-align: center;
   line-height: 3em;
   font-size: 0.8em;
   font-weight: 900;
+  margin-right: 25px;
   color: #ff8768;
 }
 
 .primary .main_article h2 {
   margin-bottom: 50px;
+  margin-right: 25px;
   text-align: center;
-  width: 500px;
   color: #686868;
 }
 
 .primary .secondary_articles {
-  width: 250px;
+  float: left;
+  width: 500px;
 }
 
-.primary .secondary_articles img {
-  width: 100px;
+.primary .secondary_articles > div {
+  width: 250px;
+  float: left;
+}
+
+.primary .secondary_articles > div img {
+  width: 90%;
   height: auto;
+}
+
+.primary .secondary_articles > div h3 {
+  font-size: 1rem;
+  color: #484848;
+  width: 95%;
+  margin-bottom: 50px;
+}
+
+.featured_posts {
+  float: left;
+  width: 70%;
+}
+
+.featured_posts h2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.featured_posts .post {
+  float: left;
+}
+
+.featured_posts .post img {
+  float: left;
+  width: 40%;
+  margin-right: 50px;
+}
+
+.featured_posts .post .post_details {
+  width: 30%;
+  float: left;
+  height: 350px;
+}
+
+.featured_posts .post .post_details .tags {
+  width: 200px;
+  font-weight: 900;
+  color: #ff8768;
+  margin-bottom: 20px;
+  border-right: 1px solid lightgrey;
+  width: fit-content;
+}
+
+.featured_posts .post .post_details h3 {
+  line-height: 25px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #3f3f3f;
+}
+
+.latest_posts {
+  float: left;
+  width: 80%;
+}
+
+.latest_posts .row {
+  margin-left: 25px;
+}
+
+.latest_posts .row .post {
+  width: 40%;
+  float: left;
+  margin-left: 25px;
+}
+
+.latest_posts .row .post img {
+  width: 95%;
+}
+
+.latest_posts .row .post .featured_details {
+  text-align: center;
+  height: 200px;
+}
+
+.latest_posts .row .post .featured_details .tag {
+  width: 200px;
+  font-weight: 900;
+  color: #ff8768;
+  margin-bottom: 20px;
+  border-right: 1px solid lightgrey;
+  width: fit-content;
 }
 /*# sourceMappingURL=main.css.map */

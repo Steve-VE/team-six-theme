@@ -23,8 +23,3 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<h1 class="jumbotron">TEST</h1>
-<script>if ($('body').popover) { document.write('bootstrap loaded from cdn') }
-    else { document.write('cdn bootstrap failed, going local');
-        document.write('<script src="js/vendor/bootstrap.min.js"><\/script>') }
-</script>

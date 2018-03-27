@@ -14,8 +14,8 @@
 
 
 *Lundi 26 mars*
-  - Mise en place GitHub
-  - Mise en place Trello
+  - Mise en place [GitHub](https://github.com/Steve-VE/team-six)
+  - Mise en place [Trello](https://trello.com/b/JnTiSL6a/le-blog-foodog)
   - Installation de Wordpress
   - Recherche de thême concordant
   - ...

@@ -8,3 +8,8 @@ Template: magazine-o
 */
 
 @import url("../magazine-o/style.css");
+
+
+h3{
+    font-size: 5em;
+}

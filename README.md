@@ -13,13 +13,13 @@ Equipe n°6 :
 ====================  Date de début : 26 Mars 2018  ==================
 
 
-26 mars 
+26 mars
   - Création du repo
   - Mise en place Trello
   - Installation de Wordpress
   - Recherche de thême concordant
   - ...
-  
-  
-  
+
+
+
 ======================== Date de fin : xx xx 2018 =====================

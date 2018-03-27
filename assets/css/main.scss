@@ -1,0 +1,64 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+header
+{
+    img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    ul
+    {
+        list-style-type: none;
+    }
+}
+
+
+
+.primary
+{
+    float: left;
+
+    .main_article
+    {
+        margin-left: 75px;
+
+        & > img
+        {
+            width: 500px;
+            height: 450px;
+        }
+
+        .tag
+        {
+            width: 500px;
+            text-align: center;
+            line-height: 3em;
+            font-size: 0.8em;
+            font-weight: 900;
+            color: #ff8768;
+        }
+
+        h2
+        {
+            margin-bottom: 50px;
+            text-align: center;
+            width: 500px;
+            color: rgb(104, 104, 104);
+        }
+    }
+
+    .secondary_articles
+    {
+        width: 250px;
+        img
+        {
+            width: 100px;
+            height: auto;
+        }
+    }
+}

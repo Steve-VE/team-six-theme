@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header img {
+  width: 200px;
+  height: 200px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+.primary {
+  float: left;
+}
+
+.primary .main_article {
+  margin-left: 75px;
+}
+
+.primary .main_article > img {
+  width: 500px;
+  height: 450px;
+}
+
+.primary .main_article .tag {
+  width: 500px;
+  text-align: center;
+  line-height: 3em;
+  font-size: 0.8em;
+  font-weight: 900;
+  color: #ff8768;
+}
+
+.primary .main_article h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 500px;
+  color: #686868;
+}
+
+.primary .secondary_articles {
+  width: 250px;
+}
+
+.primary .secondary_articles img {
+  width: 100px;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */

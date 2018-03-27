@@ -7,9 +7,8 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <title><?= bloginfo("title"); ?></title>
-
-    <?php wp_head(); ?>
     
     <link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>"  type="text/css" media="screen">
+    <?php wp_head(); ?>
 </head>
 <body>

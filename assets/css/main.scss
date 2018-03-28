@@ -4,6 +4,23 @@
     padding: 0px;
 }
 
+@import "partials/_mainheader";
+
+header
+{
+    img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    ul
+    {
+        list-style-type: none;
+    }
+}
+
+
+
 .primary
 {
     margin-top: 50px;

@@ -3,6 +3,36 @@
   padding: 0px;
 }
 
+.header-social > .logo-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: fit-content;
+}
+
+.social-network > .favicons > li {
+  display: inline;
+  margin: 10px;
+}
+
+.social-network > .favicons {
+  padding-left: 0%;
+}
+
+.favicons {
+  float: right;
+}
+
+.favicons > li {
+  text-align: left;
+}
+
+.navbar > .categorie {
+  margin-left: 5vw;
+  display: inline;
+  text-align: center;
+}
+
 header img {
   width: 200px;
   height: 200px;

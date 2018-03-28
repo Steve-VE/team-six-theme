@@ -20,6 +20,16 @@
   - Recherche de thême concordant
   - ...
   
+*Mardi 27 mars*
+  - Abandon du thème
+  - Création d'un thème vierge
+  - Structuration des fichiers de thème
+  - header/footer/body - v1
+  
+*Mercredi 28 mars*
+  - body (html/css)- v2
+  - 
+  - 
   
   
 ======================== Date de fin : xx xx 2018 =====================

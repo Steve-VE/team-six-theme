@@ -24,11 +24,11 @@
   - Abandon du thème
   - Création d'un thème vierge
   - Structuration des fichiers de thème
-  - header/footer/body - v1
+  - Header/footer/body - v1
   
 *Mercredi 28 mars*
-  - body (html/css)- v2
-  - 
+  - Body (html/css)- v2
+  - Footer (html/css) - Fini
   - 
   
   

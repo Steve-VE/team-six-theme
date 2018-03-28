@@ -19,19 +19,19 @@
         </div>
         <div class="secondary_articles">
             <div>
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image02.jpg" alt="article"> <!-- Import DB IMG -->
                 <h3>top 14 fresh snacks for dogs</h3> <!-- Remplacer par "Articles Secondaire" -->
             </div>
             <div>
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image03.jpg" alt="article"> <!-- Import DB IMG -->
                 <h3>why skinny dogs live longer</h3> <!-- Remplacer par "Articles Secondaire" -->
             </div>
             <div>
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image04.jpg" alt="article"> <!-- Import DB IMG -->
                 <h3>The 10 most dangerous foods for dogs</h3> <!-- Remplacer par "Articles Secondaire" -->
             </div>
             <div>
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image05.jpg" alt="article"> <!-- Import DB IMG -->
                 <h3>The history of commercial pet food: a great american marketing story</h3><!-- Remplacer par "Articles Secondaire" -->
             </div>
         </div>
@@ -39,7 +39,7 @@
     <section class="featured_posts">
         <h2>Featured posts</h2>
         <div class="post">    
-            <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+            <img src="assets/images/image06.jpg" alt="article"> <!-- Import DB IMG -->
             <div class="post_details">        
                 <div class="tags">
                     <span class="tag">
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="post">    
-            <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+            <img src="assets/images/image07.jpg" alt="article"> <!-- Import DB IMG -->
             <div class="post_details">        
                 <div class="tags">
                     <span class="tag">
@@ -91,7 +91,7 @@
         <h2>Latest Posts</h2>
         <div class="row">
             <div class="post">
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image02.jpg" alt="article"> <!-- Import DB IMG -->
                 <div class="featured_details">
                     <span class="tag">
                         Nutrition     <!-- Import DB TAGS -->
@@ -101,29 +101,7 @@
                 </div>
             </div>
             <div class="post">
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
-                <div class="featured_details">
-                    <span class="tag">
-                        Nutrition     <!-- Import DB TAGS -->
-                    </span>
-                    <h3>The 11 dogs food label tricks every owner need to know</h3> <!-- Import DB Title -->
-                    <p>Health-conscious consumers are skilled at deciphering nutrition facts labels. We know to monitor our sodium intake, avoid carrageenan and high</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="post">
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
-                <div class="featured_details">
-                    <span class="tag">
-                        Nutrition     <!-- Import DB TAGS -->
-                    </span>
-                    <h3>The 11 dogs food label tricks every owner need to know</h3> <!-- Import DB Title -->
-                    <p>Health-conscious consumers are skilled at deciphering nutrition facts labels. We know to monitor our sodium intake, avoid carrageenan and high</p>
-                </div>
-            </div>
-            <div class="post">
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image03.jpg" alt="article"> <!-- Import DB IMG -->
                 <div class="featured_details">
                     <span class="tag">
                         Nutrition     <!-- Import DB TAGS -->
@@ -135,7 +113,7 @@
         </div>
         <div class="row">
             <div class="post">
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image04.jpg" alt="article"> <!-- Import DB IMG -->
                 <div class="featured_details">
                     <span class="tag">
                         Nutrition     <!-- Import DB TAGS -->
@@ -145,7 +123,29 @@
                 </div>
             </div>
             <div class="post">
-                <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
+                <img src="assets/images/image05.jpg" alt="article"> <!-- Import DB IMG -->
+                <div class="featured_details">
+                    <span class="tag">
+                        Nutrition     <!-- Import DB TAGS -->
+                    </span>
+                    <h3>The 11 dogs food label tricks every owner need to know</h3> <!-- Import DB Title -->
+                    <p>Health-conscious consumers are skilled at deciphering nutrition facts labels. We know to monitor our sodium intake, avoid carrageenan and high</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="post">
+                <img src="assets/images/image06.jpg" alt="article"> <!-- Import DB IMG -->
+                <div class="featured_details">
+                    <span class="tag">
+                        Nutrition     <!-- Import DB TAGS -->
+                    </span>
+                    <h3>The 11 dogs food label tricks every owner need to know</h3> <!-- Import DB Title -->
+                    <p>Health-conscious consumers are skilled at deciphering nutrition facts labels. We know to monitor our sodium intake, avoid carrageenan and high</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="assets/images/image07.jpg" alt="article"> <!-- Import DB IMG -->
                 <div class="featured_details">
                     <span class="tag">
                         Nutrition     <!-- Import DB TAGS -->

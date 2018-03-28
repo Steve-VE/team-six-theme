@@ -12,6 +12,18 @@
 
 ======================= Date de début : 26 Mars 2018 ==================
 
+<<<<<<< HEAD
+26 mars
+  - Création du repo
+  - Mise en place Trello
+  - Installation de Wordpress
+  - Recherche de thême concordant
+  - ...
+
+
+
+======================== Date de fin : xx xx 2018 =====================
+=======
 
 *Lundi 26 mars*
   - Mise en place [GitHub](https://github.com/Steve-VE/team-six)
@@ -25,3 +37,4 @@
 ======================== Date de fin : xx xx 2018 =====================
 
 ======================== Deadline : 11 04 2018 09:00 ==================
+>>>>>>> master

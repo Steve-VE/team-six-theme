@@ -1,4 +1,5 @@
 <?php
+
 function teamSixScripts() {
 
     //Google Fonts
@@ -18,9 +19,7 @@ function teamSixScripts() {
 
     //Bootstrap JS
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js' );
-
-
-
+    
 }
 
 

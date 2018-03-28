@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    <title>FooDog</title>
-</head>
-<body>  
+<?php get_header(); ?>
+
     <section class="primary">
         <div class="main_article">
             <img src="assets/images/image01.jpg" alt="article"> <!-- Import DB IMG -->
@@ -142,6 +133,7 @@
 </html>
 
 <?php
+get_footer();
 //
 // ================================== Version - 0.0.3 ========================================
 // ======= Starting - 26/03/18 =========================== Ending - 11/04/18 =================

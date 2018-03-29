@@ -3,6 +3,8 @@
  * Template Name: Single Page
  */
 
+get_page_template("Menu-Burger");
+
 if(have_posts()){
     while (have_posts()){
         the_post();?>

@@ -26,36 +26,31 @@
     <!-- TEAM SIX - Loading Scripts (voir teamSixScripts() dans functions.php -->
     <?php add_action('wp_enqueue_scripts', 'teamSixScripts'); ?>
     <!--TEAM SIX - Font Awesome integration script -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <?php wp_head(); ?>
 </head>
 <body>
 <header>
-    <div class="header-social">
-        <div class="logo-image">
-        <img src="logo.png" alt="Digest">
-        </div>
-
-    <div class="social-network">
     
-        <ul class="favicons">
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Search</li>
-        </ul>
-  
-    </div>
-    </div>
+     <?php wp_nav_menu(array(
+         'menu' => 'mainheader_social_menu'
+     )); ?>
+    
+     
 
-    <div class="navbar">
-        <ul class="text-center">
-            <li><a href="">NUTRITION</a></li>
-            <li><a href="">WELLNESS</a></li>
-            <li><a href="">LIFESTYLE</a></li>
-            <li><a href="">COMMUNITY</a></li>
-    </ul>
+     
+
+    <div class="head-menu">
+    <h1><?php bloginfo('title'); ?></h1>
+        <?php wp_list_categories(array(
+            'title_li' => '',
+            'orderby'    => 'id',
+            'include' => array( 2, 3, 4, 5 ),
+            'hide_empty' => false
+        )); ?>
+        <hr>
     </div>
+    
     
 </header>

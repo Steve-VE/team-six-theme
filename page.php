@@ -3,10 +3,10 @@ get_header();
 ?>
 
 <main>
-    <?php
-        wp_nav_menu();
-    ?>
-
+    
+    <!-- debugging -->
+    <h2>TU ES DANS PAGE.PHP</h2>
+    
 </main>
 
 <?php

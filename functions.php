@@ -22,5 +22,19 @@ function teamSixScripts() {
     
 }
 
+// TEAM SIX - Theme supports
+
+//laisse wordpress generer les balises title
+add_theme_support( 'title-tag' );
+//active les widgets
+add_theme_support( 'customize-selective-refresh-widgets' );
+//active les menus
+add_theme_support( 'menus' );
+
+//TEAM SIX - WIDGETS INIT
+function team_six_widgets_init() {
+
+}
+add_action( 'widgets_init', 'team_six_widgets_init' );
 
 ?>

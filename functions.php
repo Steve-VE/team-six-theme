@@ -4,7 +4,7 @@ function teamSixScripts() {
 
     //Google Fonts
     wp_register_style('googleFonts',
-        'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Open+Sans:400,600,700,800');
+        'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Open+Sans:400,600,700,800');
     wp_enqueue_style('googleFonts');
 
     //Normalize.css

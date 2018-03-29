@@ -3,34 +3,98 @@
   padding: 0px;
 }
 
-.header-social > .logo-image {
+/* TEAM SIX COLORS*/
+/* TEAM SIX FONTS */
+/* Open Sans - font weights available: 400 600 600 800 */
+/* Open Sans - 400 400i (italique) */
+header {
+  margin-top: 20px;
+  width: 100%;
+}
+
+header #menu-mainheader_social li {
+  display: inline;
+  color: pink;
+  width: 100px;
+}
+
+header .head-menu {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
-  width: fit-content;
+  width: 60%;
 }
 
-.social-network > .favicons > li {
-  display: inline;
-  margin: 10px;
-}
-
-.social-network > .favicons {
-  padding-left: 0%;
-}
-
-.favicons {
-  float: right;
-}
-
-.favicons > li {
-  text-align: left;
-}
-
-.navbar > .categorie {
-  margin-left: 5vw;
-  display: inline;
+header .head-menu h1 {
   text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+  color: #424242;
+  font-weight: 600;
+}
+
+header .head-menu li {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+header .head-menu li:hover {
+  border-bottom: 3px solid #ff8d6a;
+}
+
+header .head-menu li a {
+  color: #424242;
+}
+
+header .head-menu li a:hover {
+  text-decoration: none;
+}
+
+header .head-menu hr {
+  width: 100%;
+  margin-top: 0;
+  border-color: #f7f7f7;
+}
+
+header .menu-mainheader_social-container {
+  float: right;
+  margin-right: 15px;
+}
+
+header .menu-mainheader_social-container li {
+  display: inline-table;
+  box-sizing: content-box;
+  padding: 4px 0;
+  margin-right: 5px;
+  width: auto;
+}
+
+header .menu-mainheader_social-container li a {
+  font-size: 13px;
+  color: #424242;
+  vertical-align: middle;
+}
+
+header .menu-mainheader_social-container li a:hover {
+  color: #ff8d6a;
+}
+
+header .menu-mainheader_social-container li i {
+  vertical-align: middle;
+}
+
+header .menu-mainheader_social-container li:last-child {
+  padding-left: 5px;
+  border-left: 1px solid #f7f7f7;
 }
 
 /*
@@ -61,7 +125,7 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-li {
+footer li {
   font-size: 13px;
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -78,17 +142,17 @@ li {
   text-rendering: optimizeLegibility;
 }
 
-li:first-child {
+footer li:first-child {
   border-top: none;
 }
 
-li a {
+footer li a {
   color: #fff;
   border-top: none !important;
   outline: 0;
 }
 
-li a:hover {
+footer li a:hover {
   color: #aaaaaa;
   border-bottom: none !important;
   outline: 0;
@@ -110,7 +174,7 @@ h3 {
   padding-top: 10px;
   color: #fff;
   padding-bottom: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .container-responsive-2 .fa {

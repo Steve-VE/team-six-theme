@@ -1,38 +1,83 @@
-.header-social > .logo-image
-{
-margin-left: auto;
-margin-right: auto;
-margin-top: 15px;
-width: fit-content;
-}
-
-.social-network > .favicons > li
-{
-display: inline;
-margin: 10px ;
-
-
-}
-
-.social-network > .favicons {
-
-    padding-left: 0%;
-
-}
-
-.favicons{
-    float: right;
-}
-.favicons > li{
-
-text-align: left;
-}
-
-
-.navbar > .categorie{
-    margin-left: 5vw;
-    display: inline;
-    text-align: center;
-    
-
+header {
+    margin-top: 20px;
+    width: 100%;
+    #menu-mainheader_social li {
+        display: inline;
+        color: pink;
+        width: 100px; // box-sizing: content-box;
+        // padding: 10px;
+        // font-size: 20px;
+        // width: 20px;
+        // text-align: center;
+        // text-decoration: none;
+        // background-color: #3a3e43;
+        // border-radius: 50%;
+    }
+    .head-menu {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            font-family: $font-crimson;
+            color: $color-h1;
+            font-weight: 600;
+        }
+        li {
+            text-align: center;
+            list-style: none;
+            display: inline-block;
+            box-sizing: border-box;
+            height: 45px;
+            padding: 15px;
+            text-transform: uppercase;
+            font-family: $font-open;
+            font-size: 11px;
+            font-weight: 600;
+            &:hover {
+                border-bottom: 3px solid $color-orange;
+            }
+            a {
+                color: $color-header-nav-text;
+                &:hover {
+                    text-decoration: none;
+                }
+                
+            }
+        }
+        hr {
+            width: 100%;
+            margin-top: 0;
+            border-color: $color-separator;
+        }
+    }
+    .menu-mainheader_social-container {
+        float: right;
+        margin-right: 15px;
+        li {
+            a {
+                font-size: 13px;
+                color: $color-text;
+                vertical-align: middle;
+                &:hover {
+                    color: $color-mainheader-socialicon-hover;
+                } 
+            }
+            display: inline-table;
+            box-sizing: content-box;
+            padding: 4px 0;
+            margin-right: 5px;
+            width: auto; 
+            i {
+                vertical-align: middle;
+            }
+        }
+        li:last-child {
+            padding-left: 5px;
+            border-left: 1px solid $color-separator;
+        } 
+    }
 }

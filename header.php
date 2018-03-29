@@ -30,3 +30,26 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<header>
+    
+     <?php wp_nav_menu(array(
+         'menu' => 'mainheader_social_menu'
+     )); ?>
+    
+     
+
+     
+
+    <div class="head-menu">
+    <h1><?php bloginfo('title'); ?></h1>
+        <?php wp_list_categories(array(
+            'title_li' => '',
+            'orderby'    => 'id',
+            'include' => array( 2, 3, 4, 5 ),
+            'hide_empty' => false
+        )); ?>
+        <hr>
+    </div>
+    
+    
+</header>

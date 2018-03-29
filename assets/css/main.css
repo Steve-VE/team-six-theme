@@ -14,8 +14,6 @@ header {
 
 header #menu-mainheader_social li {
   display: inline;
-  color: pink;
-  width: 100px;
 }
 
 header .head-menu {
@@ -25,18 +23,6 @@ header .head-menu {
   width: 60%;
 }
 
-<<<<<<< HEAD
-.social-network > .favicons {
-  padding-left: 0%;
-}
-
-.social-network > .favicons > li {
-  display: inline;
-  margin: 10px;
-}
-
-.favicons {
-=======
 header .head-menu h1 {
   text-align: center;
   margin-bottom: 15px;
@@ -78,7 +64,6 @@ header .head-menu hr {
 }
 
 header .menu-mainheader_social-container {
->>>>>>> eaafc116d7d756272da887dfe5c4ed99e30c706c
   float: right;
   margin-right: 15px;
 }

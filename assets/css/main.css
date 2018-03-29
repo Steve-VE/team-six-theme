@@ -3,13 +3,29 @@
   padding: 0px;
 }
 
-.header-social > .logo-image {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  width: fit-content;
+/* TEAM SIX COLORS*/
+/* TEAM SIX FONTS */
+/* Open Sans - font weights available: 400 600 600 800 */
+/* Open Sans - 400 400i (italique) */
+header {
+  margin-top: 20px;
+  width: 100%;
 }
 
+header #menu-mainheader_social li {
+  display: inline;
+  color: pink;
+  width: 100px;
+}
+
+header .head-menu {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+<<<<<<< HEAD
 .social-network > .favicons {
   padding-left: 0%;
 }
@@ -20,17 +36,185 @@
 }
 
 .favicons {
-  float: right;
-}
-
-.favicons > li {
-  text-align: left;
-}
-
-.navbar > .categorie {
-  margin-left: 5vw;
-  display: inline;
+=======
+header .head-menu h1 {
   text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+  color: #424242;
+  font-weight: 600;
+}
+
+header .head-menu li {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+header .head-menu li:hover {
+  border-bottom: 3px solid #ff8d6a;
+}
+
+header .head-menu li a {
+  color: #424242;
+}
+
+header .head-menu li a:hover {
+  text-decoration: none;
+}
+
+header .head-menu hr {
+  width: 100%;
+  margin-top: 0;
+  border-color: #f7f7f7;
+}
+
+header .menu-mainheader_social-container {
+>>>>>>> eaafc116d7d756272da887dfe5c4ed99e30c706c
+  float: right;
+  margin-right: 15px;
+}
+
+header .menu-mainheader_social-container li {
+  display: inline-table;
+  box-sizing: content-box;
+  padding: 4px 0;
+  margin-right: 5px;
+  width: auto;
+}
+
+header .menu-mainheader_social-container li a {
+  font-size: 13px;
+  color: #424242;
+  vertical-align: middle;
+}
+
+header .menu-mainheader_social-container li a:hover {
+  color: #ff8d6a;
+}
+
+header .menu-mainheader_social-container li i {
+  vertical-align: middle;
+}
+
+header .menu-mainheader_social-container li:last-child {
+  padding-left: 5px;
+  border-left: 1px solid #f7f7f7;
+}
+
+/*
+* Team-six-theme-Footer v.0.0.1 (for now it's done)
+* Responsive: ON
+* Fonts and colors are right
+*/
+html {
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container-responsive {
+  display: block;
+  text-align: center;
+}
+
+.row {
+  background-color: #3a3e43;
+  color: #aaaaaa;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer li {
+  font-size: 13px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  list-style: none;
+  text-align: left;
+  color: #fff;
+  transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  text-rendering: optimizeLegibility;
+}
+
+footer li:first-child {
+  border-top: none;
+}
+
+footer li a {
+  color: #fff;
+  border-top: none !important;
+  outline: 0;
+}
+
+footer li a:hover {
+  color: #aaaaaa;
+  border-bottom: none !important;
+  outline: 0;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+}
+
+.container-responsive-2 {
+  text-align: right;
+  background-color: #303336;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  color: #fff;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.container-responsive-2 .fa {
+  box-sizing: content-box;
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3a3e43;
+  border-radius: 50%;
+}
+
+.container-responsive-2 .fa:hover {
+  opacity: 0.7;
+}
+
+.container-responsive-2 .fa-facebook {
+  color: white;
+}
+
+.container-responsive-2 .fa-twitter {
+  color: white;
+}
+
+.container-responsive-2 .fa-instagram {
+  color: white;
 }
 
 header img {

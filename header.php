@@ -9,7 +9,7 @@
     <title><?= bloginfo("title"); ?></title>
 
     <link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>"  type="text/css" media="screen">
-<link rel="stylesheet" href="style-header.css"  type="text/css" media="screen">
+    <link rel="stylesheet" href="style-header.css"  type="text/css" media="screen">
 
     <!-- Team six - Daniel - Appel de la function load_font définie dans functions.php (Google Fonts) -->
     <?php add_action('wp_enqueue_scripts', 'load_fonts'); ?>

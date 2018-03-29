@@ -3,6 +3,220 @@
   padding: 0px;
 }
 
+/* TEAM SIX COLORS*/
+/* TEAM SIX FONTS */
+/* Open Sans - font weights available: 400 600 600 800 */
+/* Open Sans - 400 400i (italique) */
+header {
+  margin-top: 20px;
+  width: 100%;
+}
+
+header #menu-mainheader_social li {
+  display: inline;
+  color: pink;
+  width: 100px;
+}
+
+header .head-menu {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+<<<<<<< HEAD
+.social-network > .favicons {
+  padding-left: 0%;
+}
+
+.social-network > .favicons > li {
+  display: inline;
+  margin: 10px;
+}
+
+.favicons {
+=======
+header .head-menu h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+  color: #424242;
+  font-weight: 600;
+}
+
+header .head-menu li {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+header .head-menu li:hover {
+  border-bottom: 3px solid #ff8d6a;
+}
+
+header .head-menu li a {
+  color: #424242;
+}
+
+header .head-menu li a:hover {
+  text-decoration: none;
+}
+
+header .head-menu hr {
+  width: 100%;
+  margin-top: 0;
+  border-color: #f7f7f7;
+}
+
+header .menu-mainheader_social-container {
+>>>>>>> eaafc116d7d756272da887dfe5c4ed99e30c706c
+  float: right;
+  margin-right: 15px;
+}
+
+header .menu-mainheader_social-container li {
+  display: inline-table;
+  box-sizing: content-box;
+  padding: 4px 0;
+  margin-right: 5px;
+  width: auto;
+}
+
+header .menu-mainheader_social-container li a {
+  font-size: 13px;
+  color: #424242;
+  vertical-align: middle;
+}
+
+header .menu-mainheader_social-container li a:hover {
+  color: #ff8d6a;
+}
+
+header .menu-mainheader_social-container li i {
+  vertical-align: middle;
+}
+
+header .menu-mainheader_social-container li:last-child {
+  padding-left: 5px;
+  border-left: 1px solid #f7f7f7;
+}
+
+/*
+* Team-six-theme-Footer v.0.0.1 (for now it's done)
+* Responsive: ON
+* Fonts and colors are right
+*/
+html {
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container-responsive {
+  display: block;
+  text-align: center;
+}
+
+.row {
+  background-color: #3a3e43;
+  color: #aaaaaa;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer li {
+  font-size: 13px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  list-style: none;
+  text-align: left;
+  color: #fff;
+  transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  text-rendering: optimizeLegibility;
+}
+
+footer li:first-child {
+  border-top: none;
+}
+
+footer li a {
+  color: #fff;
+  border-top: none !important;
+  outline: 0;
+}
+
+footer li a:hover {
+  color: #aaaaaa;
+  border-bottom: none !important;
+  outline: 0;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+}
+
+.container-responsive-2 {
+  text-align: right;
+  background-color: #303336;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  color: #fff;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.container-responsive-2 .fa {
+  box-sizing: content-box;
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3a3e43;
+  border-radius: 50%;
+}
+
+.container-responsive-2 .fa:hover {
+  opacity: 0.7;
+}
+
+.container-responsive-2 .fa-facebook {
+  color: white;
+}
+
+.container-responsive-2 .fa-twitter {
+  color: white;
+}
+
+.container-responsive-2 .fa-instagram {
+  color: white;
+}
+
 header img {
   width: 200px;
   height: 200px;
@@ -13,40 +227,132 @@ header ul {
 }
 
 .primary {
-  float: left;
+  margin-top: 50px;
+  height: 600px;
 }
 
 .primary .main_article {
+  float: left;
   margin-left: 75px;
 }
 
 .primary .main_article > img {
-  width: 500px;
+  width: 600px;
   height: 450px;
+  margin-right: 25px;
 }
 
 .primary .main_article .tag {
-  width: 500px;
   text-align: center;
   line-height: 3em;
   font-size: 0.8em;
   font-weight: 900;
+  margin-right: 25px;
   color: #ff8768;
 }
 
 .primary .main_article h2 {
   margin-bottom: 50px;
+  margin-right: 25px;
   text-align: center;
-  width: 500px;
   color: #686868;
 }
 
 .primary .secondary_articles {
-  width: 250px;
+  float: left;
+  width: 500px;
 }
 
-.primary .secondary_articles img {
-  width: 100px;
+.primary .secondary_articles > div {
+  width: 250px;
+  float: left;
+}
+
+.primary .secondary_articles > div img {
+  width: 90%;
   height: auto;
+}
+
+.primary .secondary_articles > div h3 {
+  font-size: 1rem;
+  color: #484848;
+  width: 95%;
+  margin-bottom: 50px;
+}
+
+.featured_posts {
+  float: left;
+  width: 70%;
+}
+
+.featured_posts h2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.featured_posts .post {
+  float: left;
+}
+
+.featured_posts .post img {
+  float: left;
+  width: 40%;
+  margin-right: 50px;
+}
+
+.featured_posts .post .post_details {
+  width: 30%;
+  float: left;
+  height: 350px;
+}
+
+.featured_posts .post .post_details .tags {
+  width: 200px;
+  font-weight: 900;
+  color: #ff8768;
+  margin-bottom: 20px;
+  border-right: 1px solid lightgrey;
+  width: fit-content;
+}
+
+.featured_posts .post .post_details h3 {
+  line-height: 25px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #3f3f3f;
+}
+
+.latest_posts {
+  float: left;
+  width: 80%;
+}
+
+.latest_posts .row {
+  margin-left: 25px;
+}
+
+.latest_posts .row .post {
+  width: 40%;
+  float: left;
+  margin-left: 25px;
+}
+
+.latest_posts .row .post img {
+  width: 95%;
+}
+
+.latest_posts .row .post .featured_details {
+  text-align: center;
+  height: 200px;
+}
+
+.latest_posts .row .post .featured_details .tag {
+  width: 200px;
+  font-weight: 900;
+  color: #ff8768;
+  margin-bottom: 20px;
+  border-right: 1px solid lightgrey;
+  width: fit-content;
 }
 /*# sourceMappingURL=main.css.map */

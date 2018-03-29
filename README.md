@@ -12,18 +12,6 @@
 
 ======================= Date de début : 26 Mars 2018 ==================
 
-<<<<<<< HEAD
-26 mars
-  - Création du repo
-  - Mise en place Trello
-  - Installation de Wordpress
-  - Recherche de thême concordant
-  - ...
-
-
-
-======================== Date de fin : xx xx 2018 =====================
-=======
 
 *Lundi 26 mars*
   - Mise en place [GitHub](https://github.com/Steve-VE/team-six)
@@ -32,9 +20,27 @@
   - Recherche de thême concordant
   - ...
   
+*Mardi 27 mars*
+  - Abandon du thème
+  - Création d'un thème vierge
+  - Structuration des fichiers de thème
+  - Header/footer/body - v1
+  
+*Mercredi 28 mars*
+  - Body (html/css)- v2
+  - Footer (html/css) - Fini
+  - 
   
   
+
+======================== Deadline : 11/04/2018 09:00 ==================
+
+
+
+
+
+================================== Notes ==============================
+
 ======================== Date de fin : xx xx 2018 =====================
 
 ======================== Deadline : 11 04 2018 09:00 ==================
->>>>>>> master

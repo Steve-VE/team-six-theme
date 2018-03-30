@@ -34,7 +34,9 @@
         )); ?>
     </div>
 
-    <div id="button-scroll-up" onclick="alert('ok');"></div>
+    <div id="button-scroll-up" onclick="alert('ok');">
+        <i class="fa fa-caret-up fa-2x"></i>
+    </div>
 </footer>
 <?php wp_footer(); ?> <!-- Wordpress doc dit de placer ça juste avant le </body> -->
 </body>

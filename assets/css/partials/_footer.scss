@@ -77,28 +77,21 @@ footer{
         }
 
         .fa {
+            @include interact-element-footer();
             box-sizing: content-box;
             width: 20px;
             padding: 10px;
 
-            color: white;
+            
             font-size: 20px;
             text-align: center;
             text-decoration: none;
-
-            background-color: $color-footer;
             border-radius: 50%;
-
-            transition: color 0.3s, background-color 0.3s;
-
-            &:hover {
-                color: $color-footer;
-                background-color: white;
-            }
         }
     }
 
     #button-scroll-up{
+        @include interact-element-footer();
         position: absolute;
         bottom: 24px;
         right: 24px;
@@ -109,5 +102,10 @@ footer{
         border-radius: 8px;
         background-color: $color-footer;
         cursor: pointer;
+
+        .fa{
+            position: relative;
+            top: 4px;
+        }
     }
 }

@@ -1,27 +1,40 @@
-<?php 
-    /*
-    Template Name: HOME.PHP
-    */
-    get_header(); 
-?>
-<?php get_sidebar(); ?>
+<?php get_header(); ?>
+<section class="primary">
 
-<ul>
 <?php
+$postnum=1;
 $args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'title' );
 $postslist = get_posts( $args );
 foreach ($postslist as $post) :  setup_postdata($post); ?> 
-
-		<li><?php the_title(); ?></li>
-        <li><?php the_excerpt(); ?></li>
-        <li><?php the_date(); ?></li>
-        <li><?php the_category(); ?></li>
-<?php endforeach; ?>
-</ul>
-    
-</body>
-</html>
-
+<?php if($postnum==1){
+    echo '<div class="main_article">';
+}
+if ($postnum!=1){
+    echo '<div>';
+}
+?>
+		<?php the_title(); ?>
+        <?php 
+            if(has_post_thumbnail()){
+                the_post_thumbnail();
+            }
+            ?>
+        <?php the_excerpt(); ?>
+        <?php the_date(); ?>
+        <?php the_category(); ?>
+        <?php if($postnum==1){
+            echo '</div>';      
+            echo '<div class="secondary_articles">';
+        }
+        if ($postnum!=1){
+            echo '</div>';
+        }
+        $postnum++;
+?>
+<?php endforeach; ?>  
+</div>
+</section>
+<?php get_sidebar(); ?>
 <?php
 get_footer();
 //

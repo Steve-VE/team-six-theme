@@ -2,7 +2,7 @@
 
 
 ## Equipe n°6 :
-
+<center>
     MMP""MM""YMM `7MM"""YMM        db      `7MMM.     ,MMF'      .M"""bgd `7MMF'`YMM'   `MP' 
     P'   MM   `7   MM    `7       ;MM:       MMMb    dPMM       ,MI    "Y   MM    VMb.  ,P   
          MM        MM   d        ,V^MM.      M YM   ,M MM       `MMb.       MM     `MM.M'    
@@ -16,7 +16,7 @@
 - Daniel Muyshond -  [https://github.com/dmshd](https://github.com/dmshd)
 - Félicien Manzi - [https://github.com/gitmanfel](https://github.com/gitmanfel)
 - Jacques Bernard - [https://github.com/Bernardjacques](https://github.com/Bernardjacques)
-
+</center>
 ======================= Date de début : 26 Mars 2018 ==================
 
 

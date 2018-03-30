@@ -29,8 +29,17 @@
 *Mercredi 28 mars*
   - Body (html/css)- v2
   - Footer (html/css) - Fini
-  - 
+  - Functions.php V1
   
+*Jeudi 29 mars*
+  - Menu-Hamburger - Fini
+  - Ajout du theme dans le server BeCode - Sneak peek v1
+  - Header - v2
+  - Correction d'erreurs, nettoyage des fichers.
+  - ...
+  
+ *Vendredi 30 mars*
+  - ...
   
 
 

@@ -2,7 +2,14 @@
 
 
 ## Equipe n°6 :
-
+ 
+    MMP""MM""YMM `7MM"""YMM        db      `7MMM.     ,MMF'      .M"""bgd `7MMF'`YMM'   `MP' 
+    P'   MM   `7   MM    `7       ;MM:       MMMb    dPMM       ,MI    "Y   MM    VMb.  ,P   
+         MM        MM   d        ,V^MM.      M YM   ,M MM       `MMb.       MM     `MM.M'    
+         MM        MMmmMM       ,M  `MM      M  Mb  M' MM         `YMMNq.   MM       MMb     
+         MM        MM   Y  ,    AbmmmqMA     M  YM.P'  MM mmmmm .     `MM   MM     ,M'`Mb.   
+         MM        MM     ,M   A'     VML    M  `YM'   MM       Mb     dM   MM    ,P   `MM.  
+       .JMML.    .JMMmmmmMMM .AMA.   .AMMA..JML. `'  .JMML.     P"Ybmmd"  .JMML..MM:.  .:MMa.
 
 - Steve Van Essche -  [https://github.com/Steve-VE](https://github.com/Steve-VE)
 - Philippe Hennaux -  [https://github.com/PHennaux115](https://github.com/PHennaux115)
@@ -49,10 +56,4 @@
 
 ======================== Deadline : 11 04 2018 09:00 ==================
 
-    MMP""MM""YMM `7MM"""YMM        db      `7MMM.     ,MMF'      .M"""bgd `7MMF'`YMM'   `MP' 
-    P'   MM   `7   MM    `7       ;MM:       MMMb    dPMM       ,MI    "Y   MM    VMb.  ,P   
-         MM        MM   d        ,V^MM.      M YM   ,M MM       `MMb.       MM     `MM.M'    
-         MM        MMmmMM       ,M  `MM      M  Mb  M' MM         `YMMNq.   MM       MMb     
-         MM        MM   Y  ,    AbmmmqMA     M  YM.P'  MM mmmmm .     `MM   MM     ,M'`Mb.   
-         MM        MM     ,M   A'     VML    M  `YM'   MM       Mb     dM   MM    ,P   `MM.  
-       .JMML.    .JMMmmmmMMM .AMA.   .AMMA..JML. `'  .JMML.     P"Ybmmd"  .JMML..MM:.  .:MMa.
+    

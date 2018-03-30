@@ -1,5 +1,11 @@
-<?php get_header(); ?>
-HOME
+<?php 
+    /*
+    Template Name: HOME.PHP
+    */
+    get_header(); 
+?>
+<?php get_sidebar(); ?>
+
 <ul>
 <?php
 $args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'title' );

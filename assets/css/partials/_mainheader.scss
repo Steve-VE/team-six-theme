@@ -2,6 +2,9 @@ header {
     width: 100%;
     margin-top: 20px;
     
+    #menu-mainheader_social li {
+        display: inline;
+    }
     .head-menu {
         @include center-content();
         // width: 100%;

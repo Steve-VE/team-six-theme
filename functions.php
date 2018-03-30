@@ -1,5 +1,5 @@
 <?php
-
+//TEAM SIX - Scripts - loading css, js, ...
 function teamSixScripts() {
 
     //Google Fonts
@@ -19,8 +19,31 @@ function teamSixScripts() {
 
     //Bootstrap JS
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js' );
-    
+
 }
 
+// TEAM SIX - Theme supports activation
+//laisse wordpress generer les balises title
+add_theme_support( 'title-tag' );
+//active les widgets
+add_theme_support( 'customize-selective-refresh-widgets' );
+//active les menus
+add_theme_support( 'menus' );
+//active les thumbnails pour les posts
+add_theme_support( 'post-thumbnails');
+
+//TEAM SIX - WIDGETS INIT
+function team_six_widgets_init() {
+    register_sidebar( array(
+		'name'          => esc_html__( 'social-plus-ad', 'team-six-theme' ),
+		'id'            => 'social-plus-ad',
+		'description'   => esc_html__( 'Social Media buttons plus advertising', 'team-six-theme' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<div class="widget-title"><h3>',
+		'after_title'   => '</h3></div>',
+    ) );
+}
+add_action( 'widgets_init', 'team_six_widgets_init' );
 
 ?>

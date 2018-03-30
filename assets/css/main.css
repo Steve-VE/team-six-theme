@@ -12,6 +12,10 @@ header {
   margin-top: 20px;
 }
 
+header #menu-mainheader_social li {
+  display: inline;
+}
+
 header .head-menu {
   box-sizing: content-box;
   width: 60%;

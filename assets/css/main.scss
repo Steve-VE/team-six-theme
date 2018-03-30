@@ -5,16 +5,13 @@
 }
 
 @import "modules/_variables";
+@import "modules/_mixins";
+
 @import "partials/_mainheader";
 @import "partials/_footer";
 
 header
 {
-    img
-    {
-        width: 200px;
-        height: 200px;
-    }
     ul
     {
         list-style-type: none;
@@ -171,4 +168,11 @@ header
             }
         }
     }
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }

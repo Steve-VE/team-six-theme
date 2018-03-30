@@ -1,14 +1,12 @@
 header {
-    margin-top: 20px;
     width: 100%;
-    #menu-mainheader_social li {
-        display: inline;
-    }
+    margin-top: 20px;
+    
     .head-menu {
+        @include center-content();
+        // width: 100%;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
+
         h1 {
             text-align: center;
             margin-bottom: 15px;
@@ -17,6 +15,7 @@ header {
             color: $color-h1;
             font-weight: 600;
         }
+
         li {
             text-align: center;
             list-style: none;
@@ -28,27 +27,40 @@ header {
             font-family: $font-open;
             font-size: 11px;
             font-weight: 600;
+
+            border-bottom: 0px solid $color-orange;
+            transition: border-bottom 0.2s;
+
             &:hover {
                 border-bottom: 3px solid $color-orange;
             }
+
             a {
                 color: $color-header-nav-text;
+
                 &:hover {
                     text-decoration: none;
                 }
                 
             }
         }
+
         hr {
             width: 100%;
             margin-top: 0;
             border-color: $color-separator;
         }
     }
-    .menu-mainheader_social-container {
+    .menu {
         float: right;
         margin-right: 15px;
         li {
+            display: inline-block;
+            box-sizing: content-box;
+            padding: 4px 0;
+            margin-right: 5px;
+            width: auto; 
+
             a {
                 font-size: 13px;
                 color: $color-text;
@@ -57,11 +69,7 @@ header {
                     color: $color-mainheader-socialicon-hover;
                 } 
             }
-            display: inline-table;
-            box-sizing: content-box;
-            padding: 4px 0;
-            margin-right: 5px;
-            width: auto; 
+
             i {
                 vertical-align: middle;
             }

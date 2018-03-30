@@ -11,10 +11,10 @@
          MM        MM     ,M   A'     VML    M  `YM'   MM       Mb     dM   MM    ,P   `MM.  
        .JMML.    .JMMmmmmMMM .AMA.   .AMMA..JML. `'  .JMML.     P"Ybmmd"  .JMML..MM:.  .:MMa.
 
-======================= Steve Van Essche -  [https://github.com/Steve-VE](https://github.com/Steve-VE) =======================
-======================= Philippe Hennaux -  [https://github.com/PHennaux115](https://github.com/PHennaux115) ================
-======================= Daniel Muyshond -  [https://github.com/dmshd](https://github.com/dmshd) =============================
-======================= Félicien Manzi - [https://github.com/gitmanfel](https://github.com/gitmanfel) =======================
+======================= Steve Van Essche -  [https://github.com/Steve-VE](https://github.com/Steve-VE) ============
+======================= Philippe Hennaux -  [https://github.com/PHennaux115](https://github.com/PHennaux115) ============
+======================= Daniel Muyshond -  [https://github.com/dmshd](https://github.com/dmshd) ============
+======================= Félicien Manzi - [https://github.com/gitmanfel](https://github.com/gitmanfel) ============
 ======================= Jacques Bernard - [https://github.com/Bernardjacques](https://github.com/Bernardjacques) ============
 
 ======================= Date de début : 26 Mars 2018 ==================

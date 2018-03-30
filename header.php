@@ -46,7 +46,7 @@
         <?php wp_list_categories(array(
             'title_li' => '',
             'orderby'    => 'id',
-            'include' => array( 2, 3, 4, 5 ),
+            'include' => array( 2, 3, 4, 5, 6 ),
             'hide_empty' => false
         )); ?>
         <hr>

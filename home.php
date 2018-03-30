@@ -34,6 +34,7 @@ if ($postnum!=1){
 <?php endforeach; ?>  
 </div>
 </section>
+<?php get_sidebar(); ?>
 <?php
 get_footer();
 //

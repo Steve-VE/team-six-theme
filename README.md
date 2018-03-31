@@ -37,11 +37,13 @@
   - Création d'un thème vierge
   - Structuration des fichiers de thème
   - Header/footer/body - v1
+  - ...
   
 *Mercredi 28 mars*
   - Body (html/css)- v2
   - Footer (html/css) - Fini
   - Functions.php V1
+  - ...
   
 *Jeudi 29 mars*
   - Menu-Hamburger - Fini
@@ -51,6 +53,8 @@
   - ...
   
  *Vendredi 30 mars*
+  - Modification du Header/Footer
+  - Modification des fichers SCSS
   - ...
   
 

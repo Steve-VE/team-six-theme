@@ -37,7 +37,9 @@
 
     <div class="head-menu">
         <h1>
-            <?php bloginfo('title'); ?>
+            <a href="<?php echo get_home_url(); ?>">
+                <?php bloginfo('title'); ?>
+            </a>
         </h1>
         <?php wp_list_categories(array(
             'title_li' => '',

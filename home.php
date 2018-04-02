@@ -22,13 +22,13 @@
                 // Premier article...
                 if($postnum==1): ?>
                    <div class="main_article">
-                        <a href="<?php echo get_permalink($post)?>">
-                            <div class="image-container">
+                        <div class="image-container">
+                            <a href="<?php echo get_permalink($post)?>">
                                 <?php if(has_post_thumbnail()){
                                     the_post_thumbnail();
                                 } ?>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
 
                         <div class="category"><?php the_category(' '); ?></div>
 
@@ -45,13 +45,13 @@
                 // Articles secondaires...
                 else: ?>
                     <div>
-                        <a href="<?php echo get_permalink($post)?>">
-                            <div class="image-container">
+                        <div class="image-container">
+                            <a href="<?php echo get_permalink($post)?>">
                                 <?php if(has_post_thumbnail()){
                                     the_post_thumbnail();
                                 } ?>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                             
                         <h3>
                             <a href="<?php echo get_permalink($post)?>">
@@ -83,17 +83,17 @@
                 setup_postdata($post); ?>
                 
                 <div class="post">
-                    <a href="<?php echo get_permalink($post)?>">
-                        <div class="image-container">
+                    <div class="image-container">
+                        <a href="<?php echo get_permalink($post)?>">
                             <?php if(has_post_thumbnail()){
                             the_post_thumbnail();
                             } ?>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
                     <div class="category"><?php the_category(' '); ?></div>
 
-                    <h3>
+                    <h3 class="title">
                         <a href="<?php echo get_permalink($post)?>">
                             <?php the_title(); ?>
                         </a>
@@ -124,13 +124,13 @@
                 setup_postdata($post); ?>
                 
                 <div class="post">
-                    <a href="<?php echo get_permalink($post)?>">
-                        <div class="image-container">
+                    <div class="image-container">
+                        <a href="<?php echo get_permalink($post)?>">
                             <?php if(has_post_thumbnail()){
                             the_post_thumbnail();
                             } ?>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
                     <div class="category"><?php the_category(' '); ?></div>
 

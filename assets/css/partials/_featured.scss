@@ -1,7 +1,7 @@
 .featured{
     .post{
-        width: 70%;
-        height: fit-content;
+        width: 80%;
+        height: 240px;
         padding: 24px 0;
 
         text-align: left;
@@ -10,20 +10,32 @@
 
         .image-container{
             width: 40%;
-            height: 12%;
-
+            margin-right: 40px;
+            float: left;
+            
             img{
                 width: 100%;
                 height: auto;
-                float: left;
-    
-                margin-right: 40px;
+            }
+        }
+        
+        .category{
+            a{
+                padding-right: 12px;
+                border-right: 1px solid $color-separator-dark;
+
             }
         }
 
         .title{
+            margin: 20px 0;
             padding-right: 12px;
+
             border-right: 1px solid $color-separator;
+        }
+
+        p{
+            padding-top: 10px;
         }
     }
 }

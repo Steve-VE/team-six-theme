@@ -259,8 +259,8 @@ header .menu li a:hover {
 }
 
 .featured .post {
-  width: 70%;
-  height: fit-content;
+  width: 80%;
+  height: 240px;
   padding: 24px 0;
   text-align: left;
   border-bottom: 1px solid #f7f7f7;
@@ -268,19 +268,28 @@ header .menu li a:hover {
 
 .featured .post .image-container {
   width: 40%;
-  height: 12%;
+  margin-right: 40px;
+  float: left;
 }
 
 .featured .post .image-container img {
   width: 100%;
   height: auto;
-  float: left;
-  margin-right: 40px;
+}
+
+.featured .post .category a {
+  padding-right: 12px;
+  border-right: 1px solid #c5c5c5;
 }
 
 .featured .post .title {
+  margin: 20px 0;
   padding-right: 12px;
   border-right: 1px solid #f7f7f7;
+}
+
+.featured .post p {
+  padding-top: 10px;
 }
 
 .latest {

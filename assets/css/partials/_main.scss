@@ -4,12 +4,31 @@
     padding: 0px;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+main{
+    width: 100%;
 }
 
 
-main{
-    @include center-content();
+h2, h3{
+    color: $color-post-title;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+h3{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.category{
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 900;
+    
+    a{
+        color: $color-orange;
+    }
 }

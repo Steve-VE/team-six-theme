@@ -4,50 +4,54 @@
  */
     get_header(); 
 ?>
-<section class="primary">
+<main>
 
-<?php
-$postnum=1;
-$args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'title' );
-$postslist = get_posts( $args );
+    <section class="home">
+        <?php
+            $postnum=1;
+            $args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'title' );
+            $postslist = get_posts( $args );
 
-foreach ($postslist as $post) :  
-    setup_postdata($post); 
+            foreach ($postslist as $post) :  
+                setup_postdata($post);
+                
+                // Premier article...
+                if($postnum==1): ?>
+                   <div class="main_article">
 
-    if($postnum==1){
-        echo '<div class="main_article">';
-    }
-    else{
-        echo '<div>';
-    }
+                        <?php if(has_post_thumbnail()){
+                            the_post_thumbnail();
+                        } ?>
 
-    // On vérifie si l'article 
-    if(has_post_thumbnail()){
-        the_post_thumbnail();
-    }
-    // the_excerpt();
-    // the_date();
+                        <div class="category"><?php the_category(' '); ?></div>
+                        <?php the_title('<h2>', '</h2>'); ?>
+                    
+                    </div>
+                    <div class="secondary_articles">
+                <?php
 
-    if($postnum == 1){ // On affiche
-        the_category();
-    }
+                // Articles secondaires...
+                else: ?>
+                    <div>
+                        <?php if(has_post_thumbnail()){
+                            the_post_thumbnail();
+                        } ?>
 
-    the_title();
+                        <?php the_title('<h3>', '</h3>'); ?>
+                        
+                    </div>
+                <?php
+                endif;
+                $postnum++;
+                
+            endforeach; ?>
 
-    echo '</div>';
-
-    if($postnum==1){
-        echo '<div class="secondary_articles">';
-    }
-    $postnum++;
-
-endforeach; ?>
-
-</div>
-</section>
-<?php get_sidebar(); ?>
-<?php
-get_footer();
+        </div>
+    </section>
+</main>
+<?php 
+    // get_sidebar();
+    get_footer();
 //
 // ================================== Version - 0.1.3 ========================================
 // ======= Starting - 26/03/18 =========================== Ending - 11/04/18 =================

@@ -1,12 +1,24 @@
+/* TEAM SIX COLORS*/
+/* TEAM SIX FONTS */
+/* Open Sans - font weights available: 400 600 600 800 */
+/* Open Sans - 400 400i (italique) */
 * {
   margin: 0px;
   padding: 0px;
 }
 
-/* TEAM SIX COLORS*/
-/* TEAM SIX FONTS */
-/* Open Sans - font weights available: 400 600 600 800 */
-/* Open Sans - 400 400i (italique) */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  box-sizing: content-box;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 header {
   width: 100%;
   margin-top: 20px;
@@ -92,135 +104,6 @@ header .menu li a {
 
 header .menu li a:hover {
   color: #ff8d6a;
-}
-
-/*
-* Team-six-theme-Footer v.0.0.1 (for now it's done)
-* Responsive: ON
-* Fonts and colors are right
-*/
-footer {
-  position: relative;
-  width: 100%;
-  background-color: #3a3e43;
-}
-
-footer .container-responsive {
-  display: block;
-  text-align: center;
-}
-
-footer .container-responsive .row {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-}
-
-footer .container-responsive .row li {
-  font-size: 13px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  text-align: left;
-  color: #fff;
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  padding-top: 10px;
-  border-top: 1px solid #a8a8a8;
-}
-
-footer .container-responsive .row li:first-child {
-  border-top: none;
-}
-
-footer .container-responsive .row a {
-  color: #fff;
-  transition: color 0.3s;
-}
-
-footer .container-responsive .row a:hover {
-  color: #a8a8a8;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-footer h3 {
-  font-weight: 900;
-  font-size: 22px;
-  text-align: center;
-  color: #a8a8a8;
-}
-
-footer .container-responsive-2 {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: right;
-  background-color: #303336;
-}
-
-footer .container-responsive-2 li {
-  display: inline;
-  margin-left: 8px;
-  border: none;
-}
-
-footer .container-responsive-2 li:last-child {
-  display: none;
-}
-
-footer .container-responsive-2 .fa {
-  color: white;
-  background-color: #3a3e43;
-  transition: color 0.3s, background-color 0.3s;
-  box-sizing: content-box;
-  width: 20px;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-footer .container-responsive-2 .fa:hover {
-  color: #3a3e43;
-  background-color: white;
-}
-
-footer #button-scroll-up {
-  color: white;
-  background-color: #3a3e43;
-  transition: color 0.3s, background-color 0.3s;
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
-  background-color: #3a3e43;
-  cursor: pointer;
-}
-
-footer #button-scroll-up:hover {
-  color: #3a3e43;
-  background-color: white;
-}
-
-footer #button-scroll-up .fa {
-  position: relative;
-  top: 4px;
-}
-
-header ul {
-  list-style-type: none;
 }
 
 .primary {
@@ -353,9 +236,130 @@ header ul {
   width: fit-content;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+/*
+* Team-six-theme-Footer v.0.0.1 (for now it's done)
+* Responsive: ON
+* Fonts and colors are right
+*/
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #3a3e43;
+}
+
+footer .container-responsive {
+  display: block;
+}
+
+footer .container-responsive .row {
+  box-sizing: content-box;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .container-responsive .row li {
+  display: block;
+  width: 50%;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  text-align: left;
+  font-size: 13px;
+  color: #fff;
+  border-top: 1px solid #a8a8a8;
+}
+
+footer .container-responsive .row li:first-child {
+  border-top: none;
+}
+
+footer .container-responsive .row a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer .container-responsive .row a:hover {
+  color: #a8a8a8;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+footer .container-responsive .row .col-md-4 {
+  text-align: left;
+}
+
+footer h3 {
+  padding-left: 12px;
+  font-weight: 900;
+  font-size: 22px;
+  color: #a8a8a8;
+}
+
+footer .container-responsive-2 {
+  box-sizing: content-box;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+  background-color: #303336;
+}
+
+footer .container-responsive-2 li {
+  display: inline;
+  margin-left: 8px;
+  border: none;
+}
+
+footer .container-responsive-2 li:last-child {
+  display: none;
+}
+
+footer .container-responsive-2 .fa {
+  color: white;
+  background-color: #3a3e43;
+  transition: color 0.3s, background-color 0.3s;
+  box-sizing: content-box;
+  width: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+footer .container-responsive-2 .fa:hover {
+  color: #3a3e43;
+  background-color: white;
+}
+
+footer #button-scroll-up {
+  color: white;
+  background-color: #3a3e43;
+  transition: color 0.3s, background-color 0.3s;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #3a3e43;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer #button-scroll-up:hover {
+  color: #3a3e43;
+  background-color: white;
+}
+
+footer #button-scroll-up .fa {
+  position: relative;
+  top: 4px;
 }
 /*# sourceMappingURL=main.css.map */

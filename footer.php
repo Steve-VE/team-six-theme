@@ -34,7 +34,7 @@
         )); ?>
     </div>
 
-    <div id="button-scroll-up" onclick="alert('ok');">
+    <div id="button-scroll-up" onclick="scrollUp();">
         <i class="fa fa-caret-up fa-2x"></i>
     </div>
 </footer>

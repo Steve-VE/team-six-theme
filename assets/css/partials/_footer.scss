@@ -11,7 +11,6 @@ footer{
 
     .container-responsive {
         display: block;
-        text-align: center;
         
         .row {
             @include center-content();
@@ -19,18 +18,17 @@ footer{
             padding-bottom: 40px;
     
             font-family: 'Open Sans', sans-serif; // 2nd font used here
-            text-align: center;
             
             li {
-                font-size: 13px;
-                padding-bottom: 15px;
-                margin-bottom: 15px;
-                text-align: left;
-                color: #fff;
                 display: block;
-                margin: 0 auto;
                 width: 50%;
-                padding-top: 10px;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                padding-top: 25px;
+
+                text-align: left;
+                font-size: 13px;
+                color: #fff;
                 border-top: 1px solid $color-footer-light;
                 
                 &:first-child {
@@ -47,14 +45,18 @@ footer{
                     opacity: 0.7;
                 }
             }
+
+            .col-md-4{
+                text-align: left;
+            }
         }
 
     }
 
     h3 {
+        padding-left: 12px;
         font-weight: 900;
         font-size: 22px;
-        text-align: center;
         color: $color-footer-light;
     }
 
@@ -101,6 +103,7 @@ footer{
 
         border-radius: 8px;
         background-color: $color-footer;
+        text-align: center;
         cursor: pointer;
 
         .fa{

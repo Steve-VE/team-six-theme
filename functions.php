@@ -20,6 +20,7 @@ function teamSixScripts() {
     //Bootstrap JS
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js' );
 
+    wp_enqueue_script( 'foodog_js', get_template_directory_uri() . '/assets/js/foodog.js' );
 }
 
 // TEAM SIX - Theme supports activation

@@ -36,11 +36,13 @@
     )); ?>
 
     <div class="head-menu">
-    <h1><?php bloginfo('title'); ?></h1>
+        <h1>
+            <?php bloginfo('title'); ?>
+        </h1>
         <?php wp_list_categories(array(
             'title_li' => '',
             'orderby'    => 'id',
-            'include' => array( 2, 3, 4, 5, 6 ),
+            'include' => array( 9, 11, 12, 13 ),
             'hide_empty' => false
         )); ?>
         <hr>

@@ -5,22 +5,31 @@
 }
 
 main{
-    width: 100%;
+    @include center-content();
+    // width: 100%;
 }
 
 
 h2, h3{
     color: $color-post-title;
-    text-align: center;
     text-transform: uppercase;
 }
 h2{
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 900;
 }
 h3{
     font-size: 0.8em;
     font-weight: 700;
+}
+
+a{
+    color: $color-text;
+    
+    &:hover{
+        color: $color-text;
+        text-decoration: none;
+    }
 }
 
 .category{

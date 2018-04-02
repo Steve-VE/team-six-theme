@@ -9,7 +9,11 @@
     <section class="home">
         <?php
             $postnum=1;
-            $args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'title' );
+            $args = array( 
+                'numberposts' => 5, 
+                'order'=> 'DESC', 
+                'orderby' => 'title' 
+            );
             $postslist = get_posts( $args );
 
             foreach ($postslist as $post) :  
@@ -18,13 +22,21 @@
                 // Premier article...
                 if($postnum==1): ?>
                    <div class="main_article">
-
-                        <?php if(has_post_thumbnail()){
-                            the_post_thumbnail();
-                        } ?>
+                        <a href="<?php echo get_permalink($post)?>">
+                            <div class="image-container">
+                                <?php if(has_post_thumbnail()){
+                                    the_post_thumbnail();
+                                } ?>
+                            </div>
+                        </a>
 
                         <div class="category"><?php the_category(' '); ?></div>
-                        <?php the_title('<h2>', '</h2>'); ?>
+
+                        <h2>
+                            <a href="<?php echo get_permalink($post)?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h2>
                     
                     </div>
                     <div class="secondary_articles">
@@ -33,11 +45,19 @@
                 // Articles secondaires...
                 else: ?>
                     <div>
-                        <?php if(has_post_thumbnail()){
-                            the_post_thumbnail();
-                        } ?>
-
-                        <?php the_title('<h3>', '</h3>'); ?>
+                        <a href="<?php echo get_permalink($post)?>">
+                            <div class="image-container">
+                                <?php if(has_post_thumbnail()){
+                                    the_post_thumbnail();
+                                } ?>
+                            </div>
+                        </a>
+                            
+                        <h3>
+                            <a href="<?php echo get_permalink($post)?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h3>
                         
                     </div>
                 <?php
@@ -47,6 +67,83 @@
             endforeach; ?>
 
         </div>
+    </section>
+
+    <section class="featured">
+        <?php
+            $args = array( 
+                'numberposts' => 3, 
+                'category' => 'featured',
+                'order'=> 'ASC', 
+                'orderby' => 'date'
+            );
+            $postslist = get_posts( $args );
+
+            foreach ($postslist as $post) :  
+                setup_postdata($post); ?>
+                
+                <div class="post">
+                    <a href="<?php echo get_permalink($post)?>">
+                        <div class="image-container">
+                            <?php if(has_post_thumbnail()){
+                            the_post_thumbnail();
+                            } ?>
+                        </div>
+                    </a>
+
+                    <div class="category"><?php the_category(' '); ?></div>
+
+                    <h3>
+                        <a href="<?php echo get_permalink($post)?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
+
+                    <p>
+                        <?php 
+                            $text = get_the_excerpt($post);
+                            $text = wp_trim_words( $text, 22, "..." ); 
+                            echo $text;
+                        ?>
+                    </p>
+                
+                </div>
+        <?php endforeach; ?>
+    </section>
+
+    <section class="latest">
+        <?php
+            $args = array( 
+                'numberposts' => 8,
+                'order'=> 'ASC', 
+                'orderby' => 'date'
+            );
+            $postslist = get_posts( $args );
+
+            foreach ($postslist as $post) :  
+                setup_postdata($post); ?>
+                
+                <div class="post">
+                    <a href="<?php echo get_permalink($post)?>">
+                        <div class="image-container">
+                            <?php if(has_post_thumbnail()){
+                            the_post_thumbnail();
+                            } ?>
+                        </div>
+                    </a>
+
+                    <div class="category"><?php the_category(' '); ?></div>
+
+                    <a href="<?php echo get_permalink($post)?>">
+                        <?php the_title('<h3>', '</h3>'); ?>
+                    </a>
+
+                    <p>
+                        <?php wp_trim_words( the_excerpt(), 22, "..." ); ?>
+                    </p>
+                
+                </div>
+        <?php endforeach; ?>
     </section>
 </main>
 <?php 

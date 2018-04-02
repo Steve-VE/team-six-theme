@@ -17,3 +17,12 @@
         background-color: white;
     }
 }
+
+@mixin underline(){
+    border-bottom: 0px solid $color-orange;
+    transition: border-bottom 0.2s;
+
+    &:hover {
+        border-bottom: 3px solid $color-orange;
+    }
+}

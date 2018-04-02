@@ -1,6 +1,4 @@
-.home
-{
-    @include center-content();
+.home{
     overflow: auto;
 
     h2{
@@ -8,7 +6,8 @@
         text-align: center;
     }
     h3{
-        padding-top: 24px;
+        padding-top: 18px;
+        padding-bottom: 24px;
         text-align: left;
     }
 
@@ -42,6 +41,7 @@
         {
             float: left;
             width: 46%;
+            height: 260px;
             margin-left: 4%;
         }
     }

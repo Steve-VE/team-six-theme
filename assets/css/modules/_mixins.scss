@@ -36,19 +36,22 @@
                                         supported by Chrome and Opera */
 }
 
-@mixin orangecircle($height,$width){
+@mixin orangecircle($size){
     @include noselect();
     display: block;
     background-color: $color-orange;
-    height: $height;
-    width: $width;
+    height: $size;
+    width: $size;
     border-radius: 50%;
     p {
-        line-height: 60px;
+        line-height: $size;
         text-align: center;
         color: white;
         transform-origin: center;
         transform: rotate(-20deg);
-        font-size: 13px;
+        font-size: 12px;
     }
+}
+@mixin orange-border-bottom(){
+    border-bottom: 2px solid $color-orange;
 }

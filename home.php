@@ -70,10 +70,14 @@
     </section>
 
     <section class="featured">
+        <div class="section-title">
+            <h2>Featured posts</h2>
+        </div>
+
         <?php
             $args = array( 
                 'numberposts' => 3, 
-                'category' => 'featured',
+                'category' => '10',
                 'order'=> 'ASC', 
                 'orderby' => 'date'
             );
@@ -106,6 +110,8 @@
                             echo $text;
                         ?>
                     </p>
+
+                    <a href="" class="share"><i class="fa fa-share"></i> share</a>
                 
                 </div>
         <?php endforeach; ?>

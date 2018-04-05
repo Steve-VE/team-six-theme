@@ -37,16 +37,6 @@
   - Création d'un thème vierge
   - Structuration des fichiers de thème
   - Header/footer/body - v1
-<<<<<<< HEAD
-  
-*Mercredi 28 mars*
-  - Body (html/css)- v2
-  - Footer (html/css) - Fini
-  - 
-  
-  
-
-======================== Deadline : 11/04/2018 09:00 ==================
 
 
 
@@ -70,11 +60,26 @@
   - Modification du Header/Footer
   - Modification des fichers SCSS
   - ...
+
+  *Mardi 03 avril*  
+  - Rédaction de contenu (10 posts par catégorie)
+  - import d'images Unsplash
+  - WIP Home.php, sidebar.php, single.php
+
+  *Jeudi 05 avril*
+  - WIP Home.php, single.php
   
->>>>>>> f5cbdb11ba2e41cea8e3d214d2006bfa52f6181e
 
 
 ================================== Notes ==============================
+## Daniel: je suggère que nous documentions ce que nous avons appris, nous pourrons relire à la fin afin de mieux assimiler et partager notre readme avec les autres. Je fais un pré index à la volée, je propose qu'on documente tout ça une fois finis
+### PHP 
+#### Functions Wordpress
+### SASS  
+`@mixin nom($arg)`  
+`&`
+### VScode 
+`alt`+`flèche` 
 
 ======================== Date de fin : xx xx 2018 =====================
 

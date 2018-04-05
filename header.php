@@ -30,8 +30,13 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    
 <header>
-    <?php wp_nav_menu(array(
+<?php if (is_single()) : ?>
+<?php get_template_part('template-parts/menu', 'hamburger'); ?>
+
+<?php else : ?>
+<?php wp_nav_menu(array(
         'menu' => 'mainheader_social_menu'
     )); ?>
 
@@ -49,6 +54,8 @@
         )); ?>
         <hr>
     </div>
+<?php endif; ?>
+   
     
     
 </header>

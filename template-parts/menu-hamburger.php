@@ -13,18 +13,12 @@
     <span></span>
 
     <ul id="menu">
-      <a href="#">
-        <li>Home</li>
-      </a>
-      <a href="#">
-        <li>About</li>
-      </a>
-      <a href="#">
-        <li>Info</li>
-      </a>
-      <a href="#">
-        <li>Contact</li>
-      </a>
+    <?php wp_list_categories(array(
+            'title_li' => '',
+            'orderby'    => 'id',
+            'include' => array( 3, 4, 5, 6 ),
+            'hide_empty' => false
+        )); ?>
     </ul>
   </div>
 </nav>

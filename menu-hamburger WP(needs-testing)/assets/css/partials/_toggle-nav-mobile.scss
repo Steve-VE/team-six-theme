@@ -1,0 +1,13 @@
+.toggle-nav {
+    padding: 15px;
+    margin: 15px;
+    display: inline-block !important;
+    color: #8D7F68; // Edit colors PLS!
+    color: #fff;
+    transition: color linear 0.15s;
+    &:hover,
+    &.active {
+        text-decoration: none;
+        color: #8D7F68; // Edit colors PLS! v2
+    }
+}

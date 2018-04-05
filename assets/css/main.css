@@ -1,12 +1,53 @@
+/* TEAM SIX COLORS*/
+/* TEAM SIX FONTS */
+/* Open Sans - font weights available: 400 600 600 800 */
+/* Open Sans - 400 400i (italique) */
 * {
   margin: 0px;
   padding: 0px;
 }
 
-/* TEAM SIX COLORS*/
-/* TEAM SIX FONTS */
-/* Open Sans - font weights available: 400 600 600 800 */
-/* Open Sans - 400 400i (italique) */
+main {
+  box-sizing: content-box;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+h2, h3 {
+  color: #4b4f54;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+a {
+  color: #777777;
+}
+
+a:hover {
+  color: #777777;
+  text-decoration: none;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 900;
+}
+
+.category a {
+  color: #ff8d6a;
+}
+
 header {
   width: 100%;
   margin-top: 20px;
@@ -25,15 +66,18 @@ header .head-menu {
 }
 
 header .head-menu h1 {
-  text-align: center;
   margin-bottom: 15px;
-  margin-top: 20px;
-  font-family: "Crimson Text", serif;
+  margin-top: 60px;
   color: #424242;
+  text-align: center;
+  font-family: "Crimson Text", serif;
   font-weight: 600;
+  font-size: 4em;
 }
 
 header .head-menu li {
+  border-bottom: 0px solid #ff8d6a;
+  transition: border-bottom 0.2s;
   text-align: center;
   list-style: none;
   display: inline-block;
@@ -42,10 +86,8 @@ header .head-menu li {
   padding: 15px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  font-size: 11px;
+  font-size: 1.1em;
   font-weight: 600;
-  border-bottom: 0px solid #ff8d6a;
-  transition: border-bottom 0.2s;
 }
 
 header .head-menu li:hover {
@@ -63,7 +105,7 @@ header .head-menu li a:hover {
 header .head-menu hr {
   width: 100%;
   margin-top: 0;
-  border-color: #f7f7f7;
+  border-color: #f2f2f2;
 }
 
 header .menu {
@@ -74,203 +116,76 @@ header .menu {
 header .menu li {
   display: inline-block;
   box-sizing: content-box;
-  padding: 4px 0;
   margin-right: 5px;
-  width: auto;
+  padding: 4px 0;
+  font-size: 1.1em;
+}
+
+header .menu li:last-child {
+  padding-left: 5px;
+  border-left: 1px solid #f2f2f2;
 }
 
 header .menu li a {
-  font-size: 13px;
-  color: #424242;
-  vertical-align: middle;
+  color: #777777;
+  transition: color 0.3s;
 }
 
 header .menu li a:hover {
   color: #ff8d6a;
 }
 
-header .menu li i {
-  vertical-align: middle;
+.home {
+  overflow: auto;
 }
 
-header .menu li:last-child {
-  padding-left: 5px;
-  border-left: 1px solid #f7f7f7;
-}
-
-/*
-* Team-six-theme-Footer v.0.0.1 (for now it's done)
-* Responsive: ON
-* Fonts and colors are right
-*/
-footer {
-  position: relative;
-  width: 100%;
-  background-color: #3a3e43;
-}
-
-footer .container-responsive {
-  display: block;
+.home h2 {
+  padding-top: 24px;
   text-align: center;
 }
 
-footer .container-responsive .row {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-}
-
-footer .container-responsive .row li {
-  font-size: 13px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+.home h3 {
+  padding-top: 18px;
+  padding-bottom: 24px;
   text-align: left;
-  color: #fff;
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  padding-top: 10px;
-  border-top: 1px solid #a8a8a8;
 }
 
-footer .container-responsive .row li:first-child {
-  border-top: none;
-}
-
-footer .container-responsive .row a {
-  color: #fff;
-  transition: color 0.3s;
-}
-
-footer .container-responsive .row a:hover {
-  color: #a8a8a8;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-footer h3 {
-  font-weight: 900;
-  font-size: 22px;
-  text-align: center;
-  color: #a8a8a8;
-}
-
-footer .container-responsive-2 {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: right;
-  background-color: #303336;
-}
-
-footer .container-responsive-2 li {
-  display: inline;
-  margin-left: 8px;
-  border: none;
-}
-
-footer .container-responsive-2 li:last-child {
-  display: none;
-}
-
-footer .container-responsive-2 .fa {
-  box-sizing: content-box;
-  width: 20px;
-  padding: 10px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #3a3e43;
-  border-radius: 50%;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-footer .container-responsive-2 .fa:hover {
-  color: #3a3e43;
-  background-color: white;
-}
-
-footer #button-scroll-up {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
-  background-color: #3a3e43;
-  cursor: pointer;
-}
-
-header ul {
-  list-style-type: none;
-}
-
-.primary {
-  margin-top: 50px;
-  height: 600px;
-}
-
-.primary .main_article {
-  float: left;
-  margin-left: 75px;
-}
-
-.primary .main_article > img {
-  width: 600px;
-  height: 450px;
-  margin-right: 25px;
-}
-
-.primary .main_article .tag {
-  text-align: center;
-  line-height: 3em;
-  font-size: 0.8em;
-  font-weight: 900;
-  margin-right: 25px;
-  color: #ff8768;
-}
-
-.primary .main_article h2 {
-  margin-bottom: 50px;
-  margin-right: 25px;
-  text-align: center;
-  color: #686868;
-}
-
-.primary .secondary_articles {
-  float: left;
-  width: 500px;
-}
-
-.primary .secondary_articles > div {
-  width: 250px;
-  float: left;
-}
-
-.primary .secondary_articles > div img {
-  width: 90%;
+.home img {
+  width: 100%;
   height: auto;
 }
 
-.primary .secondary_articles > div h3 {
-  font-size: 1rem;
-  color: #484848;
-  width: 95%;
-  margin-bottom: 50px;
+.home .main_article {
+  float: left;
+  width: 54%;
+  margin-right: 1%;
+}
+
+.home .main_article > img {
+  margin-right: 25px;
+}
+
+.home .main_article .category {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.home .secondary_articles {
+  float: left;
+  width: 45%;
+}
+
+.home .secondary_articles > div {
+  float: left;
+  width: 46%;
+  height: 260px;
+  margin-left: 4%;
 }
 
 .featured_posts {
   float: left;
   width: 70%;
+  background: red;
 }
 
 .featured_posts h2 {
@@ -344,9 +259,200 @@ header ul {
   width: fit-content;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+.featured .section-title {
+  position: relative;
+}
+
+.featured .section-title h2 {
+  width: fit-content;
+  padding-right: 16px;
+  font-size: 0.8em;
+  background-color: white;
+  z-index: 10;
+}
+
+.featured .section-title:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 8px;
+  background-color: #c5c5c5;
+  z-index: -1;
+}
+
+.featured .post {
+  width: 80%;
+  height: 240px;
+  padding: 24px 0;
+  text-align: left;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.featured .post .image-container {
+  width: 40%;
+  margin-right: 40px;
+  float: left;
+}
+
+.featured .post .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.featured .post .category a {
+  padding-right: 12px;
+}
+
+.featured .post .category a:last-child {
+  border-right: 1px solid #c5c5c5;
+}
+
+.featured .post .title {
+  margin: 20px 0;
+  padding-right: 12px;
+  border-right: 1px solid #f2f2f2;
+}
+
+.featured .post p {
+  padding-top: 10px;
+  color: #777777;
+}
+
+.featured .fa-share {
+  border: 1px solid #777777;
+  border-radius: 50%;
+}
+
+.latest {
+  margin-bottom: 32px;
+}
+
+/*
+* Team-six-theme-Footer v.0.0.1 (for now it's done)
+* Responsive: ON
+* Fonts and colors are right
+*/
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #3a3e43;
+}
+
+footer .container-responsive {
+  display: block;
+}
+
+footer .container-responsive .row {
+  box-sizing: content-box;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .container-responsive .row li {
+  display: block;
+  width: 50%;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  text-align: left;
+  font-size: 13px;
+  color: #fff;
+  border-top: 1px solid #a8a8a8;
+}
+
+footer .container-responsive .row li:first-child {
+  border-top: none;
+}
+
+footer .container-responsive .row a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer .container-responsive .row a:hover {
+  color: #a8a8a8;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+footer .container-responsive .row .col-md-4 {
+  text-align: left;
+}
+
+footer h3 {
+  padding-left: 12px;
+  font-weight: 900;
+  font-size: 22px;
+  color: #a8a8a8;
+}
+
+footer .container-responsive-2 {
+  box-sizing: content-box;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+  background-color: #303336;
+}
+
+footer .container-responsive-2 li {
+  display: inline;
+  margin-left: 8px;
+  border: none;
+}
+
+footer .container-responsive-2 li:last-child {
+  display: none;
+}
+
+footer .container-responsive-2 .fa {
+  color: white;
+  background-color: #3a3e43;
+  transition: color 0.3s, background-color 0.3s;
+  box-sizing: content-box;
+  width: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+footer .container-responsive-2 .fa:hover {
+  color: #3a3e43;
+  background-color: white;
+}
+
+footer #button-scroll-up {
+  color: white;
+  background-color: #3a3e43;
+  transition: color 0.3s, background-color 0.3s;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #3a3e43;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer #button-scroll-up:hover {
+  color: #3a3e43;
+  background-color: white;
+}
+
+footer #button-scroll-up .fa {
+  position: relative;
+  top: 4px;
 }
 /*# sourceMappingURL=main.css.map */

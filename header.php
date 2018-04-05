@@ -3,11 +3,10 @@
 <head>
     <meta charset="<?= bloginfo("charset");?>">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HTML meta tags are a cornerstone of coding. But which are the most essential? We give you a rundown of all the meta tags you need to know."/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="resource-type" content="document" />
     <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="resource-type" content="document" />
     <meta name="author" content="Foodog Team-Six" />
     <meta name="contact" content="info@foodog.com" />
     <meta name="copyright" content="Copyright (c)2018 
@@ -32,21 +31,20 @@
 </head>
 <body>
 <header>
-    
-     <?php wp_nav_menu(array(
-         'menu' => 'mainheader_social_menu'
-     )); ?>
-    
-     
-
-     
+    <?php wp_nav_menu(array(
+        'menu' => 'mainheader_social_menu'
+    )); ?>
 
     <div class="head-menu">
-    <h1><?php bloginfo('title'); ?></h1>
+        <h1>
+            <a href="<?php echo get_home_url(); ?>">
+                <?php bloginfo('title'); ?>
+            </a>
+        </h1>
         <?php wp_list_categories(array(
             'title_li' => '',
             'orderby'    => 'id',
-            'include' => array( 2, 3, 4, 5, 6 ),
+            'include' => array( 3, 4, 5, 6 ),
             'hide_empty' => false
         )); ?>
         <hr>

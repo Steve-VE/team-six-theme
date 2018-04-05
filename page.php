@@ -1,11 +1,15 @@
 <?php
+/**
+ * Template Name: Page
+ */
 get_header();
+
+get_home_url( home_url() );
 ?>
 
 <main>
     
-    <!-- debugging -->
-    <h2>TU ES DANS PAGE.PHP</h2>
+    
     
 </main>
 

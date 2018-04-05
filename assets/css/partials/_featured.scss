@@ -1,42 +1,16 @@
 .featured{
 
-    .section-title{
-        position: relative;
-
-        h2{
-            width: fit-content;
-            padding-right: 16px;
-
-            font-size: 0.8em;
-            background-color: white;
-            z-index: 10;
-        }
-        &:after{
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 4px;
-            
-            position: absolute;
-            top: 8px;
-            
-            background-color: $color-separator-dark;
-            z-index: -1;
-        }
-    }
-
     .post{
-        width: 80%;
-        height: 240px;
+        overflow: auto;
+        width: 100%;
         padding: 24px 0;
-
+        
         text-align: left;
-
-        border-bottom: 1px solid $color-separator;;
-
+        
+        border-bottom: 1px solid $color-separator;
+        
         .image-container{
             width: 40%;
-            margin-right: 40px;
             float: left;
             
             img{
@@ -45,32 +19,55 @@
             }
         }
         
-        .category{
-            a{
-                padding-right: 12px;
+        
+        .content{
+            width: 59%;
+            float: right;
+            padding-left: 24px;
 
-                &:last-child{
-                    border-right: 1px solid $color-separator-dark;
+            .category{
+                a{
+                    padding-right: 12px;
+                    
+                    &:last-child{
+                        border-right: 1px solid $color-separator-dark;
+                    }
+                }
+            }
+            
+            .title{
+                margin: 20px 0;
+                padding-right: 12px;
+                
+                border-right: 1px solid $color-separator;
+
+                border: none;
+            }
+            
+            p{
+                padding-top: 10px;
+                color: $color-text;
+            }
+
+            .share{
+                text-transform: uppercase;
+
+                font-size: 0.8em;
+                font-weight: 700;
+                color: $color-separator-dark;
+
+
+                .fa{
+                    margin-right: 4px;
+                    padding: 8px;
+                    
+                    color: black;
+                    
+                    border: 1px solid $color-separator-dark;
+                    border-radius: 50%;
                 }
             }
         }
-
-        .title{
-            margin: 20px 0;
-            padding-right: 12px;
-
-            border-right: 1px solid $color-separator;
-        }
-
-        p{
-            padding-top: 10px;
-            color: $color-text;
-        }
     }
 
-    .fa-share{
-        border: 1px solid $color-text;
-
-        border-radius: 50%;
-    }
 }

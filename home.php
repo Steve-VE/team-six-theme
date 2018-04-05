@@ -70,90 +70,126 @@
     </section>
 
     <section class="featured">
-        <div class="section-title">
-            <h2>Featured posts</h2>
-        </div>
-
-        <?php
+        <div class="left">
+            <div class="section-title">
+                <h2>Featured posts</h2>
+            </div>
+            
+            <?php
             $args = array( 
                 'numberposts' => 3, 
-                'category' => '10',
+                'category' => '7',
                 'order'=> 'ASC', 
                 'orderby' => 'date'
             );
             $postslist = get_posts( $args );
-
+            
             foreach ($postslist as $post) :  
                 setup_postdata($post); ?>
                 
                 <div class="post">
                     <div class="image-container">
                         <a href="<?php echo get_permalink($post)?>">
-                            <?php if(has_post_thumbnail()){
-                            the_post_thumbnail();
-                            } ?>
+                                <?php if(has_post_thumbnail()){
+                                    the_post_thumbnail();
+                                } ?>
                         </a>
                     </div>
-
-                    <div class="category"><?php the_category(' '); ?></div>
-
-                    <h3 class="title">
-                        <a href="<?php echo get_permalink($post)?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </h3>
-
-                    <p>
-                        <?php 
+                    
+                    <div class="content">
+                        <div class="category"><?php the_category(' '); ?></div>
+                        
+                        <h3 class="title">
+                            <a href="<?php echo get_permalink($post)?>">
+                                    <?php the_title(); ?>
+                            </a>
+                        </h3>
+                        
+                        <p>
+                            <a href="<?php echo get_permalink($post)?>">
+                            <?php 
                             $text = get_the_excerpt($post);
                             $text = wp_trim_words( $text, 22, "..." ); 
                             echo $text;
-                        ?>
-                    </p>
-
-                    <a href="" class="share"><i class="fa fa-share"></i> share</a>
-                
+                            ?>
+                            </a>
+                        </p>
+                        <a href="" class="share"><i class="fa fa-share"></i> share</a>
+                    </div>
                 </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="right">
+            <!-- Sidebar ici !!! -->
+            <?php get_sidebar(); ?>
+        </div>
     </section>
 
     <section class="latest">
-        <?php
+        <div class="left">
+            <div class="section-title">
+                <h2>Lastest posts</h2>
+            </div>
+            <?php
             $args = array( 
                 'numberposts' => 8,
-                'order'=> 'ASC', 
+                'order'=> 'DESC', 
                 'orderby' => 'date'
             );
             $postslist = get_posts( $args );
-
+            
             foreach ($postslist as $post) :  
                 setup_postdata($post); ?>
                 
                 <div class="post">
                     <div class="image-container">
                         <a href="<?php echo get_permalink($post)?>">
-                            <?php if(has_post_thumbnail()){
-                            the_post_thumbnail();
-                            } ?>
+                                <?php if(has_post_thumbnail()){
+                                    the_post_thumbnail();
+                                } ?>
                         </a>
                     </div>
-
+                    
                     <div class="category"><?php the_category(' '); ?></div>
-
+                    
                     <a href="<?php echo get_permalink($post)?>">
                         <?php the_title('<h3>', '</h3>'); ?>
+                        
+                        <p>
+                            <?php 
+                            $text = get_the_excerpt($post);
+                            $text = wp_trim_words( $text, 22, "..." ); 
+                            echo $text;
+                            ?>
+                        </p>
                     </a>
-
-                    <p>
-                        <?php wp_trim_words( the_excerpt(), 22, "..." ); ?>
-                    </p>
-                
+                    
                 </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
     </section>
+
+    <div class="pagination">
+        <?php
+            $defaults = array(
+                'before'           => '<p>',
+                'after'            => '</p>',
+                'link_before'      => '',
+                'link_after'       => '',
+                'next_or_number'   => 'number',
+                'separator'        => ' ',
+                'nextpagelink'     => '>',
+                'previouspagelink' => '<',
+                'pagelink'         => '%',
+                'echo'             => 1
+            );
+            
+            wp_link_pages( $defaults );
+        ?>
+    </div>  
 </main>
 <?php 
-    // get_sidebar();
     get_footer();
 //
 // ================================== Version - 0.1.3 ========================================

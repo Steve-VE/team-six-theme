@@ -104,6 +104,14 @@ header .head-menu h1 {
   font-family: "Crimson Text", serif;
   font-weight: 600;
   font-size: 4em;
+  opacity: 1;
+  transition: opacity .30s ease-in-out;
+  -moz-transition: opacity .30s ease-in-out;
+  -webkit-transition: opacity .30s ease-in-out;
+}
+
+header .head-menu h1:hover {
+  opacity: 0.7;
 }
 
 header .head-menu li {
@@ -164,6 +172,17 @@ header .menu li a {
 
 header .menu li a:hover {
   color: #ff8d6a;
+}
+
+img {
+  opacity: 1;
+  transition: opacity .30s ease-in-out;
+  -moz-transition: opacity .30s ease-in-out;
+  -webkit-transition: opacity .30s ease-in-out;
+}
+
+img:hover {
+  opacity: 0.7;
 }
 
 .home {
@@ -545,6 +564,14 @@ footer #button-scroll-up .fa {
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
+  opacity: 1;
+  transition: opacity .30s ease-in-out;
+  -moz-transition: opacity .30s ease-in-out;
+  -webkit-transition: opacity .30s ease-in-out;
+}
+
+.single-content h1:hover {
+  opacity: 0.7;
 }
 
 .single-content .author-bar {

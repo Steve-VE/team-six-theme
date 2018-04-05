@@ -1,3 +1,6 @@
+img {
+    @include opacity-fade;
+}
 .home{
     // margin-bottom: 50px;
     overflow: auto;

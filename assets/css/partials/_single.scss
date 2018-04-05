@@ -24,6 +24,7 @@
         font-size: 35px;
         text-transform: uppercase;
         text-align: center;
+        @include opacity-fade;
     }
     .author-bar {
         display: flex;

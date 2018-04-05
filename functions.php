@@ -1,4 +1,19 @@
 <?php
+//TEAM SIX - Tools
+class Sixtools {
+    
+    public function printr($a) {
+        echo '<pre>';
+        print_r($a);
+        echo '</pre>';
+    }
+    public function vdump($a) {
+        echo '<pre>';
+        var_dump($a);
+        echo '</pre>';
+    }
+}
+
 //TEAM SIX - Scripts - loading css, js, ...
 function teamSixScripts() {
 
@@ -25,14 +40,14 @@ function teamSixScripts() {
 }
 
 // TEAM SIX - Theme supports activation
-//laisse wordpress generer les balises title
-add_theme_support( 'title-tag' );
-//active les widgets
-add_theme_support( 'customize-selective-refresh-widgets' );
-//active les menus
-add_theme_support( 'menus' );
-//active les thumbnails pour les posts
-add_theme_support( 'post-thumbnails');
+    //laisse wordpress generer les balises title
+    add_theme_support( 'title-tag' );
+    //active les widgets
+    add_theme_support( 'customize-selective-refresh-widgets' );
+    //active les menus
+    add_theme_support( 'menus' );
+    //active les thumbnails pour les posts
+    add_theme_support( 'post-thumbnails');
 
 //TEAM SIX - WIDGETS INIT
 function team_six_widgets_init() {

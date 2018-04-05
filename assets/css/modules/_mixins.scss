@@ -36,7 +36,7 @@
                                         supported by Chrome and Opera */
 }
 
-@mixin orangecircle($size){
+@mixin orangecircle($size, $font-size){
     @include noselect();
     display: block;
     background-color: $color-orange;
@@ -49,9 +49,16 @@
         color: white;
         transform-origin: center;
         transform: rotate(-20deg);
-        font-size: 12px;
+        font-size: $font-size;
+        font-weight: 600;
     }
 }
 @mixin orange-border-bottom(){
     border-bottom: 2px solid $color-orange;
+}
+@mixin orange-link {
+        color: $color-orange;
+        &:hover {
+            @include orange-border-bottom();
+        }
 }

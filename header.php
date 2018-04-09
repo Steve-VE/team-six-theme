@@ -20,7 +20,6 @@
     <title><?= bloginfo("title"); ?></title>
 
     <link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>"  type="text/css" media="screen">
-    <link rel="stylesheet" href="style-header.css"  type="text/css" media="screen">
 
     <!-- TEAM SIX - Loading Scripts (voir teamSixScripts() dans functions.php -->
     <?php add_action('wp_enqueue_scripts', 'teamSixScripts'); ?>

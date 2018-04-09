@@ -72,9 +72,13 @@
 
 
 ================================== Notes ==============================
-## Daniel: je suggère que nous documentions ce que nous avons appris, nous pourrons relire à la fin afin de mieux assimiler et partager notre readme avec les autres. Je fais un pré index à la volée, je propose qu'on documente tout ça une fois finis
 ### PHP 
 #### Functions Wordpress
+
+`wp_query`  
+`The Loop`
+`La variable globale $post`
+
 ### SASS  
 #### @mixin nom($arg)  
 ```css

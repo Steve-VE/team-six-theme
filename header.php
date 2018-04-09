@@ -42,16 +42,18 @@
 
     <div class="head-menu">
         <h1>
-            <a href="<?php echo get_home_url(); ?>">
+            <a href="<?php echo get_home_url(); ?>" alt="head-menu">
                 <?php bloginfo('title'); ?>
             </a>
         </h1>
+        <ul>
         <?php wp_list_categories(array(
             'title_li' => '',
             'orderby'    => 'id',
             'include' => array( 3, 4, 5, 6 ),
             'hide_empty' => false
         )); ?>
+        </ul>
         <hr>
     </div>
 <?php endif; ?>

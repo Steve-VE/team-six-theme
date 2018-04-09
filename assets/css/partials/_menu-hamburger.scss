@@ -29,7 +29,7 @@ body {
 
 a {
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
     color: white;
     margin-left: 20px;
 }
@@ -42,7 +42,6 @@ a:hover {
 #menuToggle {
     display: block;
     position: relative;
-    // left: 5vh;
     z-index: 1;
 }
 
@@ -51,8 +50,6 @@ a:hover {
     width: 30%;
     height: 32px;
     position: absolute;
-    //top: -7px;
-    //left: -5px;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
@@ -117,5 +114,4 @@ a:hover {
 #menuToggle input:checked~ul {
     transform: none;
     text-decoration: none;
-    //border-radius: 4%;
 }

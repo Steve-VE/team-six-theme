@@ -23,7 +23,7 @@
                 if($postnum==1): ?>
                    <div class="main_article">
                         <div class="image-container">
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" alt="Premier Article">
                                 <?php if(has_post_thumbnail()){
                                     the_post_thumbnail();
                                 } ?>
@@ -33,7 +33,7 @@
                         <div class="category"><?php the_category(' '); ?></div>
 
                         <h2>
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" alt="Category">
                                 <?php the_title(); ?>
                             </a>
                         </h2>
@@ -46,7 +46,7 @@
                 else: ?>
                     <div>
                         <div class="image-container">
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" alt="Articles secondaires">
                                 <?php if(has_post_thumbnail()){
                                     the_post_thumbnail();
                                 } ?>
@@ -54,7 +54,7 @@
                         </div>
                             
                         <h3>
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" alt="Secondaires" >
                                 <?php the_title(); ?>
                             </a>
                         </h3>
@@ -89,7 +89,7 @@
                 
                 <div class="post">
                     <div class="image-container">
-                        <a href="<?php echo get_permalink($post)?>">
+                        <a href="<?php echo get_permalink($post)?>" alt="post">
                                 <?php if(has_post_thumbnail()){
                                     the_post_thumbnail();
                                 } ?>
@@ -100,13 +100,13 @@
                         <div class="category"><?php the_category(' '); ?></div>
                         
                         <h3 class="title">
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" alt="post2">
                                     <?php the_title(); ?>
                             </a>
                         </h3>
                         
                         <p>
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" alt="post3">
                             <?php 
                             $text = get_the_excerpt($post);
                             $text = wp_trim_words( $text, 22, "..." ); 
@@ -114,7 +114,7 @@
                             ?>
                             </a>
                         </p>
-                        <a href="" class="share"><i class="fa fa-share"></i> share</a>
+                        <a href="" class="share" alt="share"><i class="fa fa-share"></i> share</a>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -144,7 +144,7 @@
                 
                 <div class="post">
                     <div class="image-container">
-                        <a href="<?php echo get_permalink($post)?>">
+                        <a href="<?php echo get_permalink($post)?>" alt="post4">
                                 <?php if(has_post_thumbnail()){
                                     the_post_thumbnail();
                                 } ?>
@@ -153,7 +153,7 @@
                     
                     <div class="category"><?php the_category(' '); ?></div>
                     
-                    <a href="<?php echo get_permalink($post)?>">
+                    <a href="<?php echo get_permalink($post)?>" alt="post5">
                         <?php the_title('<h3>', '</h3>'); ?>
                         
                         <p>

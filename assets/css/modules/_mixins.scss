@@ -63,11 +63,11 @@
         }
 }
 @mixin opacity-fade {
-    opacity: 1;
-   transition: opacity .30s ease-in-out;
-   -moz-transition: opacity .30s ease-in-out;
-   -webkit-transition: opacity .30s ease-in-out;
-   &:hover {
-      opacity: 0.7;
-      }
-   }
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

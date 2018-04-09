@@ -62,12 +62,16 @@
             @include orange-border-bottom();
         }
 }
-@mixin opacity-fade {
-    transition: opacity .3s ease-in-out;
-    -moz-transition: opacity .3s ease-in-out;
-    -webkit-transition: opacity .3s ease-in-out;
 
-    &:hover {
+@mixin opacity-fade {
+    & img{
+        image-rendering: pixelated;
+        transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -webkit-transition: opacity .3s ease-in-out;
+    }
+
+    &:hover img {
         opacity: 0.7;
     }
 }

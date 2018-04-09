@@ -6,9 +6,9 @@ get_header();
 
 $post_thumbnail_param = array (
     'class' => "img-fluid", //image responsive - Bootstrap
-    'alt'   => '<?php the_title_attribute(); ?>',
-    'title' => '<?php the_title_attribute(); ?>'
-)
+    'alt'   => the_title_attribute( array('echo'=> false) ),
+    'title' => the_title_attribute( array('echo'=> false) )
+);
 ?>
 
 <main>
@@ -44,7 +44,7 @@ $post_thumbnail_param = array (
                     echo get_avatar($author, $size = "48");
                     the_author_posts_link(); 
                     ?></p>
-                    <a href="#"><button class="comment-button"><i class="fa fa-comment"></i>Comment</button></a>
+                    <a href="#respond"><button class="comment-button"><i class="fa fa-comment"></i>Comment</button></a>
 
                 </div>
             </div>

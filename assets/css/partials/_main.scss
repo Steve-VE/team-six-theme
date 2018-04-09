@@ -8,6 +8,10 @@ main{
     @include center-content();
 }
 
+hr{
+    width: 100%;
+    border-color: $color-separator;
+}
 
 h2, h3{
     color: $color-post-title;
@@ -74,4 +78,13 @@ section{
     .right{
         width: 25%;
     }
+}
+
+.col-left{
+    width: 60%;
+
+}
+.col-right{
+    width: 40%;
+    float: right;
 }

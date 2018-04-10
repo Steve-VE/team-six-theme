@@ -5,8 +5,8 @@
             <aside class="categories">
                 <?php wp_list_categories(array(
                         'title_li' => '',
-                        'orderby'    => 'id',
-                        'include' => array( 6, 5 ),
+                        'orderby'    => 'order',
+                        'include' => array( 7, 6, 5, 4, 3, 2 ),
                         'hide_empty' => false
                     )); ?>
             </aside>

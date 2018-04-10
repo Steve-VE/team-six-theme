@@ -44,9 +44,10 @@
         </div>
 
 
-        <div class="col-md-4">
+        <div class="col-md-4 displaynone">
             <aside class="Instagram">
                 <h3>Instagram</h3>
+                <?php dynamic_sidebar( 'instagram' ); ?>
             </aside>
         </div>
     </div>

@@ -63,6 +63,11 @@ function team_six_widgets_init() {
 		'before_title'  => '<div class="widget-title"><h3>',
 		'after_title'   => '</h3></div>',
     ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'instagram', 'team-six-theme' ),
+		'id'            => 'instagram',
+		'description'   => esc_html__( 'instagram feed plugin integration', 'team-six-theme' ),
+    ));
 }
 add_action( 'widgets_init', 'team_six_widgets_init' );
 

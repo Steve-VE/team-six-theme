@@ -477,26 +477,18 @@ footer .container-responsive {
 }
 
 footer .container-responsive .row {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
   padding-top: 60px;
   padding-bottom: 40px;
   font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (orientation: portrait) {
-  footer .container-responsive .row {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+footer .container-responsive .row h3 {
+  margin-bottom: 20px;
 }
 
 footer .container-responsive .row li {
   display: block;
-  width: 50%;
+  width: 30%;
   margin-bottom: 15px;
   padding-bottom: 15px;
   padding-top: 25px;
@@ -508,6 +500,13 @@ footer .container-responsive .row li {
 
 footer .container-responsive .row li:first-child {
   border-top: none;
+}
+
+@media screen and (orientation: portrait) {
+  footer .container-responsive .row li {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 footer .container-responsive .row a {
@@ -528,13 +527,26 @@ footer .container-responsive .row .popular article {
   margin: 15px 0;
 }
 
-footer .container-responsive .row .popular article .colg img {
+footer .container-responsive .row .popular article img {
+  display: block;
+  margin: 10px auto;
   width: 150px;
   height: auto;
 }
 
+footer .container-responsive .row .popular article p {
+  text-align: center;
+  font-weight: 800;
+}
+
 footer .container-responsive .row .col-md-4 {
   text-align: left;
+}
+
+@media screen and (orientation: portrait) {
+  footer .container-responsive .row .displaynone {
+    display: none;
+  }
 }
 
 footer h3 {
@@ -542,25 +554,14 @@ footer h3 {
   font-weight: 900;
   font-size: 22px;
   color: #a8a8a8;
+  text-align: center;
 }
 
 footer .container-responsive-2 {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 15px;
-  text-align: right;
+  padding-left: 30px;
   background-color: #303336;
-}
-
-@media screen and (orientation: portrait) {
-  footer .container-responsive-2 {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 }
 
 footer .container-responsive-2 li {
@@ -595,7 +596,7 @@ footer #button-scroll-up {
   color: white;
   background-color: #3a3e43;
   transition: color 0.3s, background-color 0.3s;
-  position: fixed;
+  position: absolute;
   bottom: 24px;
   right: 24px;
   width: 45px;

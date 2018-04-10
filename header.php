@@ -20,13 +20,12 @@
     <title><?= bloginfo("title"); ?></title>
 
     <link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>"  type="text/css" media="screen">
-    <link rel="stylesheet" href="style-header.css"  type="text/css" media="screen">
 
     <!-- TEAM SIX - Loading Scripts (voir teamSixScripts() dans functions.php -->
     <?php add_action('wp_enqueue_scripts', 'teamSixScripts'); ?>
     <!--TEAM SIX - Font Awesome integration script -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <?php wp_head(); ?>
 </head>
 <body>
@@ -42,18 +41,16 @@
 
     <div class="head-menu">
         <h1>
-            <a href="<?php echo get_home_url(); ?>" alt="head-menu">
+            <a href="<?php echo get_home_url(); ?>">
                 <?php bloginfo('title'); ?>
             </a>
         </h1>
-        <ul>
         <?php wp_list_categories(array(
             'title_li' => '',
             'orderby'    => 'id',
             'include' => array( 3, 4, 5, 6 ),
             'hide_empty' => false
         )); ?>
-        </ul>
         <hr>
     </div>
 <?php endif; ?>

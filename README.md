@@ -76,44 +76,10 @@
 ### PHP 
 #### Functions Wordpress
 ### SASS  
-#### @mixin nom($arg)  
-```css
-@mixin orangecircle($size){
-    @include noselect();
-    display: block;
-    background-color: $color-orange;
-    height: $size;
-    width: $size;
-    border-radius: 50%;
-    p {
-        line-height: $size;
-        text-align: center;
-        color: white;
-        transform-origin: center;
-        transform: rotate(-20deg);
-        font-size: 13px;
-    }
-}
-```   
-```css
-@include orangecircle(60px,60px);
-```  
-#### Empêcher la sélection
-```css
-@mixin noselect() {
-        -webkit-touch-callout: none; /* iOS Safari */
-          -webkit-user-select: none; /* Safari */
-           -khtml-user-select: none; /* Konqueror HTML */
-             -moz-user-select: none; /* Firefox */
-              -ms-user-select: none; /* Internet Explorer/Edge */
-                  user-select: none; /* Non-prefixed version, currently
-                                        supported by Chrome and Opera */
-} 
-```    
-`&` : 
-
+`@mixin nom($arg)`  
+`&`
 ### VScode 
-`alt`+`flèche` : 
+`alt`+`flèche` 
 
 ======================== Date de fin : xx xx 2018 =====================
 

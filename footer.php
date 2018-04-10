@@ -4,12 +4,14 @@
             <div class="col-md-4">
                 <h3>Categories</h3>
                 <aside class="categories">
+                    <ul>
                     <?php wp_list_categories(array(
                         'title_li' => '',
                         'orderby'    => 'id',
                         'include' => array( 2, 3, 4, 5, 6 ),
                         'hide_empty' => false
                     )); ?>
+                    </ul>
                 </aside>
             </div>
 

@@ -4,6 +4,7 @@
  */
 get_header();
 
+// get_home_url( home_url() );
 ?>
 
 <main>

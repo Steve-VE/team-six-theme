@@ -1,0 +1,9 @@
+html{
+    /* Déclarations des variables de couleurs */
+    --color-separator: #f7f7f7;
+    --color-footer: #3a3e43;
+    --color-footer-bar: #303336;
+    --color-facebook: #899dce;
+    --color-twitter: #60d2f5;
+    --color-instagram: #709cbf;
+}

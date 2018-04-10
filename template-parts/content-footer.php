@@ -13,10 +13,10 @@
         </div>
 
         <div class="popular col-md-4">
-            <h3>Popular Posts</h3>
+            <h3 class="popular-h3">Popular Posts</h3>
             <?php
             $popular_posts_args = array(
-            'posts_per_page' => 3,
+            'posts_per_page' => 8,
             'meta_key' => 'my_post_viewed',
             'orderby' => 'meta_value_num',
             'order'=> 'DESC'

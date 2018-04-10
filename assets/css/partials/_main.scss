@@ -8,6 +8,10 @@ main{
     @include center-content();
 }
 
+hr{
+    width: 100%;
+    border-color: $color-separator;
+}
 
 h2, h3{
     color: $color-post-title;
@@ -39,4 +43,48 @@ a{
     a{
         color: $color-orange;
     }
+}
+
+section{
+    .section-title{
+        position: relative;
+
+        h2{
+            width: fit-content;
+            padding-right: 16px;
+
+            font-size: 0.8em;
+            background-color: white;
+            z-index: 10;
+        }
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 4px;
+            
+            position: absolute;
+            top: 8px;
+            
+            background-color: $color-separator-dark;
+            z-index: -1;
+        }
+    }
+
+    .left{
+        width: 75%;
+    }
+    
+    .right{
+        width: 25%;
+    }
+}
+
+.col-left{
+    width: 60%;
+
+}
+.col-right{
+    width: 40%;
+    float: right;
 }

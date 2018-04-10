@@ -20,7 +20,6 @@
     <title><?= bloginfo("title"); ?></title>
 
     <link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>"  type="text/css" media="screen">
-    <link rel="stylesheet" href="style-header.css"  type="text/css" media="screen">
 
     <!-- TEAM SIX - Loading Scripts (voir teamSixScripts() dans functions.php -->
     <?php add_action('wp_enqueue_scripts', 'teamSixScripts'); ?>
@@ -30,8 +29,13 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    
 <header>
-    <?php wp_nav_menu(array(
+<?php if (is_single()) : ?>
+<?php get_template_part('template-parts/menu', 'hamburger'); ?>
+
+<?php else : ?>
+<?php wp_nav_menu(array(
         'menu' => 'mainheader_social_menu'
     )); ?>
 
@@ -49,6 +53,8 @@
         )); ?>
         <hr>
     </div>
+<?php endif; ?>
+   
     
     
 </header>

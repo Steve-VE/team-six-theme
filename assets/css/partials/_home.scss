@@ -1,5 +1,7 @@
 .home{
+    // margin-bottom: 50px;
     overflow: auto;
+    margin-bottom: 32px;
 
     h2{
         padding-top: 24px;
@@ -11,13 +13,7 @@
         text-align: left;
     }
 
-    img{
-        width: 100%;
-        height: auto;
-    }
-
-    .main_article
-    {
+    .main_article{
         float: left;
         width: 54%;
         margin-right: 1%;
@@ -32,18 +28,30 @@
         }
     }
 
-    .secondary_articles
-    {
+    .secondary_articles{
         float: left;
         width: 45%;
-
-        &>div
-        {
+        
+        &>div{
             float: left;
             width: 46%;
-            height: 260px;
+            height: 16vw;
+
             margin-left: 4%;
         }
+    }
+}
+
+
+.post{
+
+    .home &, .featured &, .latest &{
+        @include opacity-fade;
+    }
+
+    img:not(.avatar){
+        width: 100%;
+        height: auto;
     }
 }
 

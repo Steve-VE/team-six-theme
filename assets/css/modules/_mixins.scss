@@ -36,19 +36,42 @@
                                         supported by Chrome and Opera */
 }
 
-@mixin orangecircle($height,$width){
+@mixin orangecircle($size, $font-size){
     @include noselect();
     display: block;
     background-color: $color-orange;
-    height: $height;
-    width: $width;
+    height: $size;
+    width: $size;
     border-radius: 50%;
     p {
-        line-height: 60px;
+        line-height: $size;
         text-align: center;
         color: white;
         transform-origin: center;
         transform: rotate(-20deg);
-        font-size: 13px;
+        font-size: $font-size;
+        font-weight: 600;
+    }
+}
+@mixin orange-border-bottom(){
+    border-bottom: 2px solid $color-orange;
+}
+@mixin orange-link {
+        color: $color-orange;
+        &:hover {
+            @include orange-border-bottom();
+        }
+}
+
+@mixin opacity-fade {
+    & img{
+        image-rendering: pixelated;
+        transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -webkit-transition: opacity .3s ease-in-out;
+    }
+
+    &:hover img {
+        opacity: 0.7;
     }
 }

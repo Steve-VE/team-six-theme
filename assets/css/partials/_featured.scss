@@ -1,5 +1,4 @@
 .featured{
-
     .post{
         overflow: auto;
         width: 100%;
@@ -9,8 +8,13 @@
         
         border-bottom: 1px solid $color-separator;
         
+        &:last-child{
+            border-bottom-style: none;
+        }
+
         .image-container{
-            width: 40%;
+            width: 48%;
+            margin-right: 4%;
             float: left;
             
             img{
@@ -19,11 +23,9 @@
             }
         }
         
-        
         .content{
-            width: 59%;
+            width: 47%;
             float: right;
-            padding-left: 24px;
 
             .category{
                 a{

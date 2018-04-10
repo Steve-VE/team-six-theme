@@ -13,6 +13,9 @@ class Sixtools {
         echo '</pre>';
     }
 }
+global $tools;
+$tools = new Sixtools(); 
+
 
 //TEAM SIX - Scripts - loading css, js, ...
 function teamSixScripts() {
@@ -63,4 +66,96 @@ function team_six_widgets_init() {
 }
 add_action( 'widgets_init', 'team_six_widgets_init' );
 
+
+/** 
+* Create numeric pagination in WordPress
+*/
+function wp_numeric_pagination($container_class = ''){
+    if( is_singular() ){
+        return;
+    }
+ 
+    global $wp_query;
+ 
+    /** Stop execution if there's only 1 page */
+    if( $wp_query->max_num_pages <= 1 ){
+        return;
+    }
+ 
+    $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+    $max   = intval( $wp_query->max_num_pages );
+ 
+    /** Add current page to the array */
+    if ( $paged >= 1 )
+        $links[] = $paged;
+ 
+    /** Add the pages around the current page to the array */
+    if ( $paged >= 3 ) {
+        $links[] = $paged - 1;
+        $links[] = $paged - 2;
+    }
+ 
+    if ( ( $paged + 2 ) <= $max ) {
+        $links[] = $paged + 2;
+        $links[] = $paged + 1;
+    }
+ 
+    echo '<div class="'. $container_class .'"><ul>';
+ 
+    /** Previous Post Link */
+    if ( get_previous_posts_link() )
+        printf( '<li>%s</li>', get_previous_posts_link('<') );
+ 
+    /** Link to first page, plus ellipses if necessary */
+    if ( ! in_array( 1, $links ) ) {
+        $class = 1 == $paged ? ' class="active"' : '';
+ 
+        printf( '<li%s><a href="%s">%s</a></li>', $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+ 
+        if ( ! in_array( 2, $links ) )
+            echo '<li>-</li>';
+    }
+ 
+    /** Link to current page, plus 2 pages in either direction if necessary */
+    sort( $links );
+    foreach ( (array) $links as $link ) {
+        if($paged == $link){
+            printf( '<li class="active">%s</a></li>', $link );
+        }
+        else{
+            printf( '<li><a href="%s">%s</a></li>', esc_url( get_pagenum_link( $link ) ), $link );
+        }
+    }
+ 
+    /** Link to last page, plus ellipses if necessary */
+    if ( ! in_array( $max, $links ) ) {
+        if ( ! in_array( $max - 1, $links ) ){
+            echo '<li>-</li>';
+        }
+ 
+        $class = ($paged == $max) ? ' class="active"' : '';
+        printf( '<li%s><a href="%s">%s</a></li>', $class, esc_url( get_pagenum_link( $max ) ), $max );
+    }
+ 
+    /** Next Post Link */
+    if ( get_next_posts_link() )
+        printf( '<li>%s</li>', get_next_posts_link('>') );
+ 
+    echo '</ul></div>';
+}
+
+//show popular posts without plugin (wp-snippets.com)
+function count_post_visits() {
+    if( is_single() ) {
+        global $post;
+        $views = get_post_meta( $post->ID, 'my_post_viewed', true );
+        if( $views == '' ) {
+        update_post_meta( $post->ID, 'my_post_viewed', '1' ); 
+        }else {
+        $views_no = intval( $views );
+        update_post_meta( $post->ID, 'my_post_viewed', ++$views_no );
+        }
+    }
+}
+add_action( 'wp_head', 'count_post_visits' );
 ?>

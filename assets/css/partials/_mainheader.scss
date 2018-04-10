@@ -20,6 +20,7 @@ header {
             font-weight: 600;
 
             font-size: 4em;
+            @include opacity-fade;
         }
 
         li {
@@ -47,9 +48,7 @@ header {
         }
 
         hr {
-            width: 100%;
             margin-top: 0;
-            border-color: $color-separator;
         }
     }
     .menu {

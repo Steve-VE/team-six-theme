@@ -2,10 +2,14 @@
     margin-bottom: 32px;
     overflow: auto;
     
-    .post{
+    hr{
         float: left;
+    }
+
+    .post{
+        float: left;    
         width: 48%;
-        padding: 24px 0;
+        padding-top: 24px;
         
         text-align: center;
         

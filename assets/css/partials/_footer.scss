@@ -12,6 +12,12 @@ footer{
     .container-responsive {
         display: block;
         .row {
+            @media #{$smartphone-portrait}{
+                margin-left: 5%;
+                margin-right: 5%;
+             }
+            margin-left: 20%;
+            margin-right: 20%;
             padding-top: 60px;
             padding-bottom: 40px;
             font-family: 'Open Sans', sans-serif; // 2nd font used here
@@ -20,7 +26,7 @@ footer{
             }
             li {
                 display: block;
-                width: 30%;
+                // width: 30%;
                 margin-bottom: 15px;
                 padding-bottom: 15px;
                 padding-top: 25px;
@@ -50,23 +56,42 @@ footer{
                     width: 100%;
                     height: auto;
                     display: block;
-                    margin: 15px 0;
-                    img {
-                        display: block;
-                        margin: 10px auto;
-                        width: 150px;
-                        height: auto;
+                    margin-top: 15px;
+                    margin-bottom: 30px;
+                    @media #{$pc}{
+                        .colg {
+                            img {
+                                width: 50px;
+                                height: auto;
+                                float: left;
+                                margin-right: 10px;
+                            }
+                        }
+                        .cold {
+                            p {
+                                font-weight: 600;
+                            }
+                        }
                     }
-                    p {
-                        text-align: center;
-                        font-weight: 800;
+                    @media #{$smartphone-portrait}{
+                        img {
+                            display: block;
+                            margin: 10px auto;
+                            width: 150px;
+                            height: auto;
+                        }
+                        p {
+                            text-align: center;
+                            font-weight: 800;
+                        }
                     }
                 }
             }
             .col-md-4{
                 text-align: left;
             }
-            .displaynone {
+            .instagramdisplay {
+                display: block;
                 @media #{$smartphone-portrait}{
                     display: none;
                  }
@@ -76,11 +101,11 @@ footer{
     }
 
     h3 {
-        padding-left: 12px;
+        padding-left: 25px;
         font-weight: 900;
-        font-size: 22px;
+        font-size: 11px;
         color: $color-footer-light;
-        text-align: center;
+        text-align: left;
     }
 
     .container-responsive-2 {

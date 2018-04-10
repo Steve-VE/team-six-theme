@@ -6,7 +6,7 @@
                 <?php wp_list_categories(array(
                         'title_li' => '',
                         'orderby'    => 'id',
-                        'include' => array( 2, 3, 4, 5, 6 ),
+                        'include' => array( 6, 5 ),
                         'hide_empty' => false
                     )); ?>
             </aside>
@@ -44,7 +44,7 @@
         </div>
 
 
-        <div class="col-md-4 displaynone">
+        <div class="col-md-4 instagramdisplay">
             <aside class="Instagram">
                 <h3>Instagram</h3>
                 <?php dynamic_sidebar( 'instagram' ); ?>

@@ -477,9 +477,18 @@ footer .container-responsive {
 }
 
 footer .container-responsive .row {
+  margin-left: 20%;
+  margin-right: 20%;
   padding-top: 60px;
   padding-bottom: 40px;
   font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (orientation: portrait) {
+  footer .container-responsive .row {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 footer .container-responsive .row h3 {
@@ -488,7 +497,6 @@ footer .container-responsive .row h3 {
 
 footer .container-responsive .row li {
   display: block;
-  width: 30%;
   margin-bottom: 15px;
   padding-bottom: 15px;
   padding-top: 25px;
@@ -524,37 +532,55 @@ footer .container-responsive .row .popular article {
   width: 100%;
   height: auto;
   display: block;
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
-footer .container-responsive .row .popular article img {
-  display: block;
-  margin: 10px auto;
-  width: 150px;
-  height: auto;
+@media screen and (min-width: 840px) {
+  footer .container-responsive .row .popular article .colg img {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+  }
+  footer .container-responsive .row .popular article .cold p {
+    font-weight: 600;
+  }
 }
 
-footer .container-responsive .row .popular article p {
-  text-align: center;
-  font-weight: 800;
+@media screen and (orientation: portrait) {
+  footer .container-responsive .row .popular article img {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: auto;
+  }
+  footer .container-responsive .row .popular article p {
+    text-align: center;
+    font-weight: 800;
+  }
 }
 
 footer .container-responsive .row .col-md-4 {
   text-align: left;
 }
 
+footer .container-responsive .row .instagramdisplay {
+  display: block;
+}
+
 @media screen and (orientation: portrait) {
-  footer .container-responsive .row .displaynone {
+  footer .container-responsive .row .instagramdisplay {
     display: none;
   }
 }
 
 footer h3 {
-  padding-left: 12px;
+  padding-left: 25px;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 11px;
   color: #a8a8a8;
-  text-align: center;
+  text-align: left;
 }
 
 footer .container-responsive-2 {

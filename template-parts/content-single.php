@@ -22,8 +22,8 @@
             //Paramètres wordpress pour l'affichage de la  photo
             $post_thumbnail_param = array (
                 'class' => "img-fluid", //image responsive - Bootstrap
-                'alt'   => the_title_attribute(),
-                'title' => the_title_attribute()
+                'alt'   => get_the_title(),
+                'title' => get_the_title()
             );
             the_post_thumbnail('large', $post_thumbnail_param); ?>
             <div class="author-bar">

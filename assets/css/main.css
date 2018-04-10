@@ -458,9 +458,21 @@ footer .container-responsive .row a:hover {
   opacity: 0.7;
 }
 
-footer .container-responsive .row .popular-thumbnail {
-  width: 100px;
-  height: auto;
+footer .container-responsive .row .popular-post {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+footer .container-responsive .row .popular-post .popular-thumbnail {
+  width: 30%;
+  height: 100%;
+}
+
+footer .container-responsive .row .popular-post .p {
+  width: 70%;
+  color: #fff;
+  margin-left: 5px;
+  margin-bottom: 0 !important;
 }
 
 footer .container-responsive .row .col-md-4 {

@@ -1,0 +1,41 @@
+.pagination{
+    width: 100%;
+    text-align: center;
+
+    ul{
+        margin: 0 auto;
+        list-style: none;
+
+        li{
+            display: inline-block;
+            margin: 0 2px;
+            
+            color: $color-separator-dark;
+            
+            
+            a, &.active{
+                display: inline-block;
+                
+                width: 36px;
+                height: 36px;
+                line-height: 32px;
+                
+                border: 1px solid $color-separator-dark;
+                border-radius: 50%;
+            }
+
+            a{
+                color: $color-separator-dark;
+                background-color: transparent;
+            }
+
+            &.active{
+                color: $color-separator;
+                background-color: $color-footer-bar;
+                border-color: $color-footer-bar;
+
+                cursor: default;
+            }
+        }
+    }
+}

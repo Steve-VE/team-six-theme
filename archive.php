@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="container">
 	<div id="content" role="main">
        
-		<h2>Tu es dans archive.php</h2>
+
 		<?php the_post(); ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		

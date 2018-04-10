@@ -42,7 +42,7 @@
                     the_author_posts_link(); 
                     ?>
                 </p>
-                <a href="#">
+                <a href="#respond">
                     <button class="comment-button">
                         <i class="fa fa-comment"></i>Comment</button>
                 </a>

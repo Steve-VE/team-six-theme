@@ -482,10 +482,8 @@ footer .container-responsive {
 }
 
 footer .container-responsive .row {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
   padding-top: 60px;
   padding-bottom: 40px;
   font-family: 'Open Sans', sans-serif;
@@ -493,15 +491,17 @@ footer .container-responsive .row {
 
 @media screen and (orientation: portrait) {
   footer .container-responsive .row {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
+}
+
+footer .container-responsive .row h3 {
+  margin-bottom: 20px;
 }
 
 footer .container-responsive .row li {
   display: block;
-  width: 50%;
   margin-bottom: 15px;
   padding-bottom: 15px;
   padding-top: 25px;
@@ -515,6 +515,13 @@ footer .container-responsive .row li:first-child {
   border-top: none;
 }
 
+@media screen and (orientation: portrait) {
+  footer .container-responsive .row li {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 footer .container-responsive .row a {
   color: #fff;
   transition: color 0.3s;
@@ -526,51 +533,66 @@ footer .container-responsive .row a:hover {
   opacity: 0.7;
 }
 
-footer .container-responsive .row .popular-post {
-  margin-bottom: 20px;
-  display: flex;
+footer .container-responsive .row .popular article {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
-footer .container-responsive .row .popular-post .popular-thumbnail {
-  width: 30%;
-  height: 100%;
+@media screen and (min-width: 840px) {
+  footer .container-responsive .row .popular article .colg img {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+  }
+  footer .container-responsive .row .popular article .cold p {
+    font-weight: 600;
+  }
 }
 
-footer .container-responsive .row .popular-post .p {
-  width: 70%;
-  color: #fff;
-  margin-left: 5px;
-  margin-bottom: 0 !important;
+@media screen and (orientation: portrait) {
+  footer .container-responsive .row .popular article img {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: auto;
+  }
+  footer .container-responsive .row .popular article p {
+    text-align: center;
+    font-weight: 800;
+  }
 }
 
 footer .container-responsive .row .col-md-4 {
   text-align: left;
 }
 
-footer h3 {
-  padding-left: 12px;
-  font-weight: 900;
-  font-size: 22px;
-  color: #a8a8a8;
-}
-
-footer .container-responsive-2 {
-  box-sizing: content-box;
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: right;
-  background-color: #303336;
+footer .container-responsive .row .instagramdisplay {
+  display: block;
 }
 
 @media screen and (orientation: portrait) {
-  footer .container-responsive-2 {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+  footer .container-responsive .row .instagramdisplay {
+    display: none;
   }
+}
+
+footer h3 {
+  padding-left: 25px;
+  font-weight: 900;
+  font-size: 11px;
+  color: #a8a8a8;
+  text-align: left;
+}
+
+footer .container-responsive-2 {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  background-color: #303336;
 }
 
 footer .container-responsive-2 li {
@@ -605,7 +627,7 @@ footer #button-scroll-up {
   color: white;
   background-color: #3a3e43;
   transition: color 0.3s, background-color 0.3s;
-  position: fixed;
+  position: absolute;
   bottom: 24px;
   right: 24px;
   width: 45px;

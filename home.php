@@ -20,19 +20,19 @@
         );
         $postslist = get_posts( $args );
 
-        foreach ($postslist as $post) :  
-            setup_postdata($post);
-            
-            // Premier article...
-            if($postnum==1): $postnum++; ?>
-            <div class="main_article post">
-                <div class="image-container">
-                    <a href="<?php echo get_permalink($post)?>">
-                        <?php if(has_post_thumbnail()){
-                            the_post_thumbnail();
-                        } ?>
-                    </a>
-                </div>
+            foreach ($postslist as $post) :  
+                setup_postdata($post);
+                
+                // Premier article...
+                if($postnum==1): ?>
+                   <div class="main_article post">
+                        <div class="image-container">
+                            <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
+                                <?php if(has_post_thumbnail()){
+                                    the_post_thumbnail();
+                                } ?>
+                            </a>
+                        </div>
 
                 <div class="category"><?php the_category(' '); ?></div>
 
@@ -47,14 +47,22 @@
                 <?php
 
                 // Articles secondaires...
-            else: ?>
-                <div class="post">
-                    <div class="image-container">
-                        <a href="<?php echo get_permalink($post)?>">
-                            <?php if(has_post_thumbnail()){
-                                the_post_thumbnail();
-                            } ?>
-                        </a>
+                else: ?>
+                    <div class="post">
+                        <div class="image-container">
+                            <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
+                                <?php if(has_post_thumbnail()){
+                                    the_post_thumbnail();
+                                } ?>
+                            </a>
+                        </div>
+                            
+                        <h3>
+                            <a href="<?php echo get_permalink($post)?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h3>
+                        
                     </div>
                         
                     <h3>
@@ -98,7 +106,7 @@
                     
                     <div class="post">
                         <div class="image-container">
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
                                     <?php if(has_post_thumbnail()){
                                         the_post_thumbnail();
                                     } ?>
@@ -115,7 +123,7 @@
                             </h3>
                             
                             <p>
-                                <a href="<?php echo get_permalink($post)?>">
+                                <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
                                 <?php 
                                 $text = get_the_excerpt($post);
                                 $text = wp_trim_words( $text, 22, "..." ); 
@@ -157,7 +165,7 @@
                     
                     <div class="post">
                         <div class="image-container">
-                            <a href="<?php echo get_permalink($post)?>">
+                            <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
                                     <?php if(has_post_thumbnail()){
                                         the_post_thumbnail();
                                     } ?>

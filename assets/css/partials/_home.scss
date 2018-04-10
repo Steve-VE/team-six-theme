@@ -1,6 +1,6 @@
 .home{
     // margin-bottom: 50px;
-    overflow: auto;
+    display: flex;
     margin-bottom: 32px;
 
     h2{
@@ -26,18 +26,35 @@
             padding-top: 32px;
             text-align: center;
         }
+
+        @media #{$smartphone}{
+            width: 100%;
+        }
     }
 
     .secondary_articles{
-        float: left;
         width: 45%;
+
+        @media #{$smartphone}{
+            width: 100%;
+        }
         
-        &>div{
+        .post{
             float: left;
             width: 46%;
-            height: 16vw;
-
+            // height: 16%;
+            overflow: auto;
+            
             margin-left: 4%;
+            
+            @media #{$smartphone}{
+                margin-left: 0%;
+                width: 48%;
+                
+                &:nth-child(even){
+                    margin-left: 4%;
+                }
+            }
         }
     }
 }

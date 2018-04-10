@@ -11,64 +11,64 @@
 <main>
     <?php if( $paged <= 1 ): ?>
     <section class="home">
-        <?php
-            $postnum=1;
-            $args = array( 
-                'numberposts' => 5, 
-                'order'=> 'DESC', 
-                'orderby' => 'title' 
-            );
-            $postslist = get_posts( $args );
+    <?php
+        $postnum=1;
+        $args = array( 
+            'numberposts' => 5, 
+            'order'=> 'DESC', 
+            'orderby' => 'title' 
+        );
+        $postslist = get_posts( $args );
 
-            foreach ($postslist as $post) :  
-                setup_postdata($post);
-                
-                // Premier article...
-                if($postnum==1): ?>
-                   <div class="main_article post">
-                        <div class="image-container">
-                            <a href="<?php echo get_permalink($post)?>">
-                                <?php if(has_post_thumbnail()){
-                                    the_post_thumbnail();
-                                } ?>
-                            </a>
-                        </div>
+        foreach ($postslist as $post) :  
+            setup_postdata($post);
+            
+            // Premier article...
+            if($postnum==1): ?>
+            <div class="main_article post">
+                <div class="image-container">
+                    <a href="<?php echo get_permalink($post)?>">
+                        <?php if(has_post_thumbnail()){
+                            the_post_thumbnail();
+                        } ?>
+                    </a>
+                </div>
 
-                        <div class="category"><?php the_category(' '); ?></div>
+                <div class="category"><?php the_category(' '); ?></div>
 
-                        <h2>
-                            <a href="<?php echo get_permalink($post)?>">
-                                <?php the_title(); ?>
-                            </a>
-                        </h2>
-                    
-                    </div>
-                    <div class="secondary_articles">
+                <h2>
+                    <a href="<?php echo get_permalink($post)?>">
+                        <?php the_title(); ?>
+                    </a>
+                </h2>
+            
+            </div>
+            <div class="secondary_articles">
                 <?php
 
                 // Articles secondaires...
-                else: ?>
-                    <div class="post">
-                        <div class="image-container">
-                            <a href="<?php echo get_permalink($post)?>">
-                                <?php if(has_post_thumbnail()){
-                                    the_post_thumbnail();
-                                } ?>
-                            </a>
-                        </div>
-                            
-                        <h3>
-                            <a href="<?php echo get_permalink($post)?>">
-                                <?php the_title(); ?>
-                            </a>
-                        </h3>
-                        
+            else: ?>
+                <div class="post">
+                    <div class="image-container">
+                        <a href="<?php echo get_permalink($post)?>">
+                            <?php if(has_post_thumbnail()){
+                                the_post_thumbnail();
+                            } ?>
+                        </a>
                     </div>
-                <?php
-                endif;
-                $postnum++;
-                
-            endforeach; ?>
+                        
+                    <h3>
+                        <a href="<?php echo get_permalink($post)?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
+                    
+                </div>
+            <?php
+            endif;
+            $postnum++;
+            
+        endforeach; ?>
 
         </div>
     </section>

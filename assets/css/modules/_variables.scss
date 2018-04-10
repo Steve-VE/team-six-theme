@@ -24,3 +24,9 @@ $color-mainheader-menu-categories-hover: grey;
 $font-open: 'Open Sans', sans-serif;
 /* Open Sans - 400 400i (italique) */
 $font-crimson: 'Crimson Text', serif;
+
+// Media queries
+$pc: "screen and (min-width: 840px)";
+$smartphone: "screen and (max-width: 840px)";
+$smartphone-portrait: "screen and (orientation: portrait)";
+$smartphone-landscape: "screen and (orientation: landscape)";

@@ -14,6 +14,14 @@ main {
   padding-right: 20%;
 }
 
+@media screen and (orientation: portrait) {
+  main {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 hr {
   width: 100%;
   border-color: #f2f2f2;
@@ -110,6 +118,14 @@ header .head-menu {
   text-align: center;
 }
 
+@media screen and (orientation: portrait) {
+  header .head-menu {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 header .head-menu h1 {
   margin-bottom: 15px;
   margin-top: 60px;
@@ -190,7 +206,7 @@ header .menu li a:hover {
 }
 
 .home {
-  overflow: auto;
+  display: flex;
   margin-bottom: 32px;
 }
 
@@ -220,16 +236,37 @@ header .menu li a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 840px) {
+  .home .main_article {
+    width: 100%;
+  }
+}
+
 .home .secondary_articles {
-  float: left;
   width: 45%;
 }
 
-.home .secondary_articles > div {
+@media screen and (max-width: 840px) {
+  .home .secondary_articles {
+    width: 100%;
+  }
+}
+
+.home .secondary_articles .post {
   float: left;
   width: 46%;
-  height: 16vw;
+  overflow: auto;
   margin-left: 4%;
+}
+
+@media screen and (max-width: 840px) {
+  .home .secondary_articles .post {
+    margin-left: 0%;
+    width: 48%;
+  }
+  .home .secondary_articles .post:nth-child(even) {
+    margin-left: 4%;
+  }
 }
 
 .home .post img, .featured .post img, .latest .post img {
@@ -449,6 +486,14 @@ footer .container-responsive .row {
   font-family: 'Open Sans', sans-serif;
 }
 
+@media screen and (orientation: portrait) {
+  footer .container-responsive .row {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 footer .container-responsive .row li {
   display: block;
   width: 50%;
@@ -513,6 +558,14 @@ footer .container-responsive-2 {
   padding-bottom: 15px;
   text-align: right;
   background-color: #303336;
+}
+
+@media screen and (orientation: portrait) {
+  footer .container-responsive-2 {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 footer .container-responsive-2 li {

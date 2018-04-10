@@ -4,6 +4,12 @@
     width: 60%;
     padding-left: 20%;
     padding-right: 20%;
+    
+    @media #{$smartphone-portrait}{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 @mixin interact-element-footer(){

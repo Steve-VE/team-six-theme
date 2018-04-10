@@ -24,7 +24,7 @@
             setup_postdata($post);
             
             // Premier article...
-            if($postnum==1): ?>
+            if($postnum==1): $postnum++; ?>
             <div class="main_article post">
                 <div class="image-container">
                     <a href="<?php echo get_permalink($post)?>">
@@ -66,8 +66,6 @@
                 </div>
             <?php
             endif;
-            $postnum++;
-            
         endforeach; ?>
 
         </div>
@@ -125,7 +123,13 @@
                                 ?>
                                 </a>
                             </p>
-                            <a href="" class="share"><i class="fa fa-share"></i> share</a>
+                            <?php 
+                                // $link = 'https://www.facebook.com/sharer/sharer.php?u='. get_permalink($post);
+                                // echo "href=\"$link\"";
+                                // echo "onclick=&quot;window.open(this.href, \'facebook-share\',\'width=580,height=296\');return false;&quot;"
+                            ?>
+                            <!-- <a href="" class="share"><i class="fa fa-share"></i> share</a> -->
+                            <?php echo gk_social_buttons("share", true, true, true); ?>
                         </div>
                     </div>
                 <?php endforeach; ?>

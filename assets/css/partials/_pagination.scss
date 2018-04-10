@@ -24,16 +24,19 @@
                 border-radius: 50%;
             }
 
+            
+            a:hover, &.active{
+                color: $color-separator;
+                background-color: $color-footer-bar;
+                border-color: $color-footer-bar;
+            }
+            
             a{
                 color: $color-separator-dark;
                 background-color: transparent;
             }
-
-            &.active{
-                color: $color-separator;
-                background-color: $color-footer-bar;
-                border-color: $color-footer-bar;
-
+            
+            .active{
                 cursor: default;
             }
         }

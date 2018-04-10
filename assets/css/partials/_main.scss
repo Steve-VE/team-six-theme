@@ -83,6 +83,10 @@ section{
 .col-left{
     width: 60%;
 
+    @media #{$smartphone}{
+        width: 100%;
+    }
+
 }
 .col-right{
     width: 40%;

@@ -1,6 +1,20 @@
 function scrollUp(){
-    console.log("scroll up !");
-    window.scrollTo(0, 0);
+    let scrollPosition = document.documentElement.scrollTop;
+    let scrollSpeed = scrollPosition / 50;
+
+    var intervalID = window.setInterval(function(){
+        if(scrollPosition > 0){
+            scrollPosition -= scrollSpeed;
+            if(scrollPosition < 0){
+                scrollPosition = 0;
+            }
+
+            window.scrollTo(0, scrollPosition);
+        }
+        else{
+            clearInterval(intervalID);
+        }
+    }, 10);
 }
 
 
@@ -13,3 +27,5 @@ window.onload = function(){
         images[i].style.width = width + "px";
     }
 };//*/
+
+

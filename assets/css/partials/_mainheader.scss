@@ -7,7 +7,6 @@ header {
     }
     .head-menu {
         @include center-content();
-        // width: 100%;
         text-align: center;
 
         h1 {
@@ -23,19 +22,37 @@ header {
             @include opacity-fade;
         }
 
+        ul{
+            margin: 0;
+            padding: 0;
+
+            @media #{$smartphone}{
+                width: 100%;
+                text-align: center;
+            }
+        }
+
         li {
             @include underline();
             
-            text-align: center;
-            list-style: none;
-            display: inline-block;
             box-sizing: border-box;
+            display: inline-block;
             height: 45px;
             padding: 15px;
+            
+            list-style: none;
+            
+            text-align: center;
             text-transform: uppercase;
             font-family: $font-open;
             font-size: 1.1em;
             font-weight: 600;
+            
+            @media #{$smartphone}{
+                font-size: 0.7em;
+                padding: 5px;
+                height: 25px;
+            }
 
             a {
                 color: $color-header-nav-text;
@@ -43,7 +60,6 @@ header {
                 &:hover {
                     text-decoration: none;
                 }
-                
             }
         }
 

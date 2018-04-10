@@ -28,11 +28,16 @@
                 $popular_posts_loop->the_post();
                 echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
                 echo '<article class="popular-post">';
+                echo '<div class="colg">';
                 the_post_thumbnail('thumbnail', ['class' => 'popular-thumbnail']);
+                echo '</div>';
+                echo '<div class="cold">';
                 echo '<p>';
                 the_title_attribute();
                 echo '</p>';
+                echo '</div>';
                 echo '</article>';
+                echo '</a>';
             endwhile;
             wp_reset_query();
             ?>

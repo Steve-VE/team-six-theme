@@ -46,6 +46,7 @@
                 <?php bloginfo('title'); ?>
             </a>
         </h1>
+        <div class="responsive-container">
         <ul>
         <?php wp_list_categories(array(
             'title_li' => '',
@@ -54,6 +55,7 @@
             'hide_empty' => false
         )); ?>
         </ul>
+        </div>
         <hr>
     </div>
 <?php endif; ?>

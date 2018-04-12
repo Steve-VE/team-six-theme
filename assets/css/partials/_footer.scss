@@ -8,30 +8,27 @@ footer{
     position: relative;
     width: 100%;
     background-color: $color-footer;
-    
     .container-responsive {
         display: block;
         .row {
-            @media #{$smartphone-portrait}{
-                margin-left: 5%;
-                margin-right: 5%;
-             }
-            margin-left: 20%;
-            margin-right: 20%;
-            padding-top: 60px;
-            padding-bottom: 40px;
-            font-family: 'Open Sans', sans-serif; // 2nd font used here
-            h3 {
-                margin-bottom: 20px;
+            box-sizing: content-box;
+            width: 80%;
+            padding-left: 10%;
+            padding-right: 10%;
+            @media #{$smartphone-portrait} {
+                margin: 0;
             }
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-family: 'Open Sans', sans-serif; // 2nd font used here
             li {
                 display: block;
-                // width: 30%;
-                margin-bottom: 15px;
-                padding-bottom: 15px;
+                width: 100%;
+                margin-bottom: 20px;
                 padding-top: 25px;
                 text-align: left;
-                font-size: 13px;
+                font-size: 12px;
+                font-weight: 800;
                 color: #fff;
                 border-top: 1px solid $color-footer-light;
                 &:first-child {
@@ -52,37 +49,52 @@ footer{
                 }
             }
             .popular {
+                h3 {
+                    margin-bottom: 5px;
+                }
                 article {
+                    display: block;
                     width: 100%;
                     height: auto;
-                    display: block;
-                    margin-top: 15px;
-                    margin-bottom: 30px;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
                     @media #{$pc}{
-                        .colg {
-                            img {
-                                width: 50px;
-                                height: auto;
-                                float: left;
-                                margin-right: 10px;
-                            }
+                        float: right;
+                        font-weight: 600;
+                        img {
+                            
+                            width: 100px;
+                            height: auto;
+                            float: left;
+                            margin-right: 10px;
+                            
                         }
-                        .cold {
-                            p {
-                                font-weight: 600;
+                        a {
+                            font-weight: 800;
+                            font-size: 14px;
+                            transition: color 0.3s;
+                            &:hover {
+                                @include orange-border-bottom;
+                                opacity: O.9;
                             }
                         }
                     }
-                    @media #{$smartphone-portrait}{
+                    @media #{$smartphone-portrait} {
+                        text-align: center;
                         img {
-                            display: block;
-                            margin: 10px auto;
-                            width: 150px;
-                            height: auto;
+                            width: 64px;
+                            height: 64px;
+                            margin: 15px;
                         }
-                        p {
-                            text-align: center;
+                        a {
+                            display: block;
                             font-weight: 800;
+                            font-size: 16px;
+                            transition: color 0.3s;
+                            &:hover {
+                                @include orange-border-bottom;
+                                opacity: O.9;
+                            }
                         }
                     }
                 }
@@ -101,11 +113,18 @@ footer{
     }
 
     h3 {
-        padding-left: 25px;
+        padding-left: 35px;
         font-weight: 900;
-        font-size: 11px;
-        color: $color-footer-light;
+        font-size: 13px;
+        color: $color-footer-h3;
         text-align: left;
+        @media #{$smartphone-portrait}{
+            // color: $color-footer-h3;
+            font-size: 16px;
+            margin-top: 20px;
+            padding: 0;
+            text-align: center;
+        }
     }
 
     .container-responsive-2 {
@@ -113,29 +132,43 @@ footer{
         padding-bottom: 15px;
         padding-left: 30px;
         background-color: $color-footer-bar;
-
-        li{
-            display: inline;
-            margin-left: 8px;
-            border: none;
-
-            &:last-child{
-                display: none;
+        @media #{$pc}{
+            @include center-content;
+        }
+        ul {
+            text-align: right;
+            @media #{$smartphone-portrait}{  
+                text-align: center;
+                transform: translateX(-20px);
+            }
+            @media #{$smartphone-landscape}{  
+                text-align: center;
+            }
+            li{
+                display: inline;
+                border: none;
+                .fa {
+                    @include interact-element-footer();
+                    box-sizing: content-box;
+                    width: 20px;
+                    padding: 10px;
+        
+                    
+                    font-size: 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    @media #{$smartphone-portrait}{
+                        font-size: 25px;
+                        width: 30px;
+                    }
+                }
+                &:last-child{
+                    display: none;
+                }
             }
         }
 
-        .fa {
-            @include interact-element-footer();
-            box-sizing: content-box;
-            width: 20px;
-            padding: 10px;
-
-            
-            font-size: 20px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 50%;
-        }
     }
 
     #button-scroll-up{
@@ -143,7 +176,6 @@ footer{
         position: fixed;
         bottom: 24px;
         right: 24px;
-
         width: 45px;
         height: 45px;
 

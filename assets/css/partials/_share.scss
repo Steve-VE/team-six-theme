@@ -1,0 +1,57 @@
+.share{
+    position: relative;
+
+    text-transform: uppercase;
+
+    font-size: 0.8em;
+    font-weight: 700;
+    color: $color-separator-dark;
+
+
+    .fa{
+        margin-right: 4px;
+        padding: 8px;
+        
+        // color: white;
+        
+        border: 1px solid $color-separator-dark;
+        border-radius: 50%;
+    }
+    
+    a{
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        padding: 8px;
+        width: 30px;
+        color: white;
+
+        opacity: 0;
+        transition: background 1s, opacity 1s, left 1s;
+    }
+
+    &:hover{
+        a{
+            opacity: 1;
+
+            @for $i from 2 through 4{
+                &:nth-child(#{$i}){
+                    left: 15px + (35px * $i);
+                    color: white;
+                    text-align: center;
+                    
+                    @if $i == 2 {
+                        background-color: $color-facebook;
+                    }
+                    @else if $i == 3 {
+                        background-color: $color-twitter;
+                    }
+                    @else {
+                        background-color: black;
+                    }
+                }
+            }
+            opacity: 1;
+        }
+    }
+}

@@ -176,27 +176,31 @@ function gk_social_buttons($content, $enable_facebook = false, $enable_twitter =
     $title = get_the_title();
     // if(!is_feed() && !is_home() && !is_page()) {
     if(true) {
-        $content .= '<div class="share">';
+        // <a href="" class="share"><i class="fa fa-share"></i> share</a> -->
+        $content = '<div class="share"><i class="fa fa-share"></i>' . $content;
+        // $content .= '<div class="share">';
         
         if($enable_facebook){
             $content .= '<a class="gk-social-buttons fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u='.$permalink.'"
-            onclick="window.open(this.href, \'facebook-share\',\'width=580,height=296\');return false;">
-            <span>Facebook</span>
-            </a>';
+            onclick="window.open(this.href, \'facebook-share\',\'width=580,height=296\');return false;">';
+            // $content .= <span>Facebook</span>
+            $content .= '</a>';
+
+            http://www.facebook.com/sharer.php?u=http%3A%2F%2Fdigest.thefarmersdog.com%2Ftruth-about-table-scraps-for-dogs%2F
         }
 
         if($enable_twitter){
             $content .= '<a class="gk-social-buttons fa fa-twitter" href="http://twitter.com/share?text='.$title.'&amp;url='.$permalink.'"
-                onclick="window.open(this.href, \'twitter-share\', \'width=550,height=235\');return false;">
-                <span>Twitter</span>
-            </a>';
+            onclick="window.open(this.href, \'twitter-share\', \'width=550,height=235\');return false;">';
+            // $content .= <span>Twitter</span>
+            $content .= '</a>';
         }
               
         if($enable_google_plus){
             $content .= '<a class="gk-social-buttons fa fa-google-plus" href="https://plus.google.com/share?url='.$permalink.'"
-            onclick="window.open(this.href, \'google-plus-share\', \'width=490,height=530\');return false;">
-                <span>Google+</span>
-            </a>';
+            onclick="window.open(this.href, \'google-plus-share\', \'width=490,height=530\');return false;">';
+            // $content .= <span>Instagram</span>
+            $content .= '</a>';
         }
 
         $content .= '</div>';

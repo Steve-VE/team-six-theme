@@ -1196,4 +1196,13 @@ a:hover {
   text-align: center;
   background-color: black;
 }
+
+.single {
+  text-align: center;
+  width: 100vw;
+  left: 0;
+  background-color: beige;
+  position: absolute;
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */

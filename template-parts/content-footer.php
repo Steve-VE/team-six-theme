@@ -16,10 +16,10 @@
             <h3 class="popular-h3">Popular Posts</h3>
             <?php
             $popular_posts_args = array(
-            'posts_per_page' => 8,
+            'posts_per_page' => 3,
             'meta_key' => 'my_post_viewed',
             'orderby' => 'meta_value_num',
-            'order'=> 'DESC'
+            'order' => 'DESC'
             );
             
             $popular_posts_loop = new WP_Query( $popular_posts_args );
@@ -28,14 +28,14 @@
                 $popular_posts_loop->the_post();
                 echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
                 echo '<article class="popular-post">';
-                echo '<div class="colg">';
+                // echo '<div class="colg">';
                 the_post_thumbnail('thumbnail', ['class' => 'popular-thumbnail']);
-                echo '</div>';
-                echo '<div class="cold">';
-                echo '<p>';
+                // echo '</div>';
+                // echo '<div class="cold">';
+                echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
                 the_title_attribute();
-                echo '</p>';
-                echo '</div>';
+                echo '</a>';
+                // echo '</div>';
                 echo '</article>';
                 echo '</a>';
             endwhile;

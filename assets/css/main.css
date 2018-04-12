@@ -1050,4 +1050,13 @@ footer #button-scroll-up .fa {
   text-align: center;
   margin-top: 150px;
 }
+
+.single {
+  text-align: center;
+  width: 100vw;
+  left: 0;
+  background-color: beige;
+  position: absolute;
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */

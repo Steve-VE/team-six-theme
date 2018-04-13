@@ -464,6 +464,7 @@ footer {
 
 footer .container-responsive {
   display: block;
+  width: 100%;
 }
 
 footer .container-responsive .row {
@@ -1204,5 +1205,26 @@ a:hover {
   background-color: beige;
   position: absolute;
   display: block;
+}
+
+.sidebar {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 70px;
+}
+
+.sidebar img {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar .ssb_button {
+  margin: 0 !important;
+  margin-bottom: 2px !important;
+  border-radius: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */

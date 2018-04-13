@@ -1,5 +1,8 @@
 .sidebar {
-    width: 20%;
+    @media #{$smartphone-portrait} {
+        display: none;
+    }
+    width: 100%;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 70px;

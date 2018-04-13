@@ -1,0 +1,15 @@
+.navbar {
+    margin: 0;
+    padding: 0 16px;
+    border-bottom: 1px solid $color-separator-dark;
+
+    .title {
+        margin-left: 48px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 1.75em;
+        a{
+            color: $color-header-nav-text;
+        }
+    }
+}

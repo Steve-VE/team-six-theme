@@ -207,4 +207,9 @@ function gk_social_buttons($content, $enable_facebook = false, $enable_twitter =
     }
     return $content;
 }
-add_filter('the_content', 'gk_social_buttons');
+
+function the_share_button($content = "share", $enable_facebook = true, $enable_twitter = true, $enable_google_plus = true){
+    echo gk_social_buttons($content, $enable_facebook, $enable_twitter, $enable_google_plus);
+}
+// add_filter('the_content', 'gk_social_buttons');
+// add_filter( 'the_share_button', 'gk_social_buttons' );

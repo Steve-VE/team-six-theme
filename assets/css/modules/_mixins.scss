@@ -24,12 +24,21 @@
     }
 }
 
-@mixin underline(){
+@mixin underline($padding-bottom: 0){
     border-bottom: 0px solid $color-orange;
-    transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s, padding-bottom 0.2s;
+
+    
+    @if($padding-bottom != 0){
+        padding-bottom: $padding-bottom;
+    }
 
     &:hover {
         border-bottom: 3px solid $color-orange;
+
+        @if($padding-bottom != 0){
+            padding-bottom: ($padding-bottom - 3px);
+        }
     }
 }
 @mixin noselect() {

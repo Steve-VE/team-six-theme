@@ -15,7 +15,6 @@ header {
 
             color: $color-h1;
             text-align: center;
-            font-family: $font-crimson;
             font-weight: 600;
 
             font-size: 4em;
@@ -33,19 +32,17 @@ header {
         }
 
         li {
-            @include underline();
-            
-            box-sizing: border-box;
             display: inline-block;
             height: 45px;
             padding: 15px;
+            @include underline(32px);
             
             list-style: none;
             
             text-align: center;
             text-transform: uppercase;
             font-family: $font-open;
-            font-size: 1.1em;
+            font-size: .8em;
             font-weight: 600;
             
             @media #{$smartphone}{

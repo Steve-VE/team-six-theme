@@ -4,71 +4,52 @@
 * Version V.0.8
 */
 
-.navbar {
-    background: white;
-    border-bottom: 1px solid black;
-    text-align: center;
-    display: flex;
-    padding-bottom: 20px;
-    #home {
-        text-align: center;
-        margin-left: 125px;
-        font-family: $font-crimson;
-        margin-bottom: -100px;
-        @media #{$smartphone-portrait} {
-            margin-left: 129px;
+#menuToggle {
+    @include noselect();
+    position: fixed;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        color: $color-text-white;
+        margin-left: 20px;
+
+        &:hover {
+            color: $color-orange;
+            text-decoration: none;
         }
     }
-}
 
-.responsive-container {
-    text-align: center;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    color: $color-text;
-    margin-left: 20px;
-    &:hover {
-        color: #ff946a;
-        text-decoration: none;
-    }
-}
-
-#menuToggle {
-    display: block;
-    position: relative;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-    .title {
-        color: $color-text;
-        font-weight: 400;
-        text-align: center;
-        margin-bottom: -25px;
-        font-size: 1.75em !important;
-        margin-left: -55px;
-    }
     input {
         display: block;
-        width: 30%;
+        
+        width: 32px;
         height: 32px;
         position: absolute;
-        cursor: pointer;
+
         opacity: 0;
-        z-index: 2;
-        -webkit-touch-callout: none;
+        z-index: 3;
+
+        cursor: pointer;
+
+        &:checked~ul {
+            transform: none;
+            text-decoration: none;
+        }
+
         &:checked~span {
             background: $color-orange;
             display: block;
             opacity: 1;
             transform: rotate(45deg) translate(-0.5px, -2px);
+
             @media #{$smartphone-portrait} {
                 transform: rotate(45deg) translate(-2px, -1px);
             }
+
             &:nth-child(3) {
                 transform: rotate(-45deg) translate(-3.5px, 2px);
+
                 @media #{$smartphone-portrait} {
                     transform: rotate(-45deg) translate(-4.5px, 0.5px);
                 }
@@ -84,14 +65,20 @@ a {
         width: 25px;
         height: 3px;
         margin-bottom: 4px;
+
+        z-index: 2;
         position: relative;
+        
         background: $color-text;
         border-radius: 3px;
-        z-index: 1;
-        left: 5vh;
+        
         text-align: center;
         transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+        transition: 
+            transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), 
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), 
+            opacity 0.55s ease;
+        
         &:nth-last-child(3) {
             transform-origin: 10% 0%;
         }
@@ -99,26 +86,27 @@ a {
 }
 
 #menu {
-    position: absolute;
-    margin: -100px 0 0 -50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    // margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background: rgba(0, 0, 0, 0.726);
+
+    background: rgba(0, 0, 0, 0.7);
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    
     li {
         padding: 8px 0;
-        font-size: 3vh;
-        color: #ff946a;
+        font-size: 2em;
     }
-}
-
-#menuToggle input:checked~ul {
-    transform: none;
-    text-decoration: none;
+    
+    @media #{$smartphone-landscape}{
+        height: 100vh;
+    }
 }
 
 #TB_window {
@@ -127,5 +115,3 @@ a {
         margin-top: 150px;
     }
 }
-
-// }

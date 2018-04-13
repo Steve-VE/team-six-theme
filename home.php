@@ -126,7 +126,10 @@
                                 // echo "onclick=&quot;window.open(this.href, \'facebook-share\',\'width=580,height=296\');return false;&quot;"
                             ?>
                             <!-- <a href="" class="share"><i class="fa fa-share"></i> share</a> -->
-                            <?php echo gk_social_buttons("share", true, true, true); ?>
+                            <?php 
+                            // echo gk_social_buttons("share", true, true, true); 
+                            the_share_button();
+                            ?>
                         </div>
                     </div>
                 <?php endforeach; ?>

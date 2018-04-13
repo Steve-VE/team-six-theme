@@ -32,10 +32,9 @@
     
 <header>
 <?php if (is_single()) : ?>
-<?php get_template_part('template-parts/menu', 'hamburger'); ?>
-
+    <?php get_template_part('template-parts/content', 'subheader'); ?>
 <?php else : ?>
-<?php wp_nav_menu(array(
+    <?php wp_nav_menu(array(
         'menu' => 'mainheader_social_menu'
     )); ?>
 
@@ -56,7 +55,4 @@
         <hr>
     </div>
 <?php endif; ?>
-   
-    
-    
 </header>

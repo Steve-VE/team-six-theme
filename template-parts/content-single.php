@@ -13,10 +13,9 @@
         </div>
 
         <div class="post">
-
-            <h1>
+            <h2>
                 <?php  the_title(); ?>
-            </h1>
+            </h2>
 
             <?php 
             //Paramètres wordpress pour l'affichage de la  photo
@@ -44,14 +43,17 @@
                 </p>
                 <a href="#respond">
                     <button class="comment-button">
-                        <i class="fa fa-comment"></i>Comment</button>
+                        <i class="fa fa-comment"></i>Comment
+                    </button>
                 </a>
 
             </div>
         </div>
 
         <div class="content">
-            <?php the_content(); ?>
+            <?php 
+            echo the_content(); 
+            ?>
         </div>
         <aside class="newletter">
             <h5>Subscribe to The FooDog Newletter</h5>

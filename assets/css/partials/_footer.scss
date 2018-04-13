@@ -174,7 +174,7 @@ footer{
 
     #button-scroll-up{
         @include interact-element-footer();
-        position: absolute;
+        position: fixed;
         bottom: 24px;
         right: 24px;
         width: 45px;

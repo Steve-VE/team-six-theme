@@ -20,40 +20,39 @@
         );
         $postslist = get_posts( $args );
 
-            foreach ($postslist as $post) :  
-                setup_postdata($post);
-                
-                // Premier article...
-                if($postnum==1): ?>
-                   <div class="main_article post">
-                        <div class="image-container">
-                            <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
-                                <?php if(has_post_thumbnail()){
-                                    the_post_thumbnail();
-                                } ?>
-                            </a>
-                        </div>
-
-                <div class="category"><?php the_category(' '); ?></div>
-
-                <h2>
-                    <a href="<?php echo get_permalink($post)?>">
-                        <?php the_title(); ?>
-                    </a>
-                </h2>
+        foreach ($postslist as $post) :  
+            setup_postdata($post);
             
-            </div>
-            <div class="secondary_articles">
-                <?php
+            // Premier article...
+            if($postnum == 1): $postnum++; ?>
+                <div class="main_article post">
+                    <div class="image-container">
+                        <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
+                            <?php if(has_post_thumbnail()){
+                                the_post_thumbnail();
+                            } ?>
+                        </a>
+                    </div>
 
+                    <div class="category">
+                        <?php the_category(' '); ?>
+                    </div>
+
+                    <h2>
+                        <a href="<?php echo get_permalink($post)?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="secondary_articles">
+                <?php
                 // Articles secondaires...
-                else: ?>
+            else: ?>
                     <div class="post">
                         <div class="image-container">
                             <a href="<?php echo get_permalink($post)?>" title="<?php the_title(); ?>" >
-                                <?php if(has_post_thumbnail()){
-                                    the_post_thumbnail();
-                                } ?>
+                                <?php if(has_post_thumbnail()){ the_post_thumbnail(); } ?>
                             </a>
                         </div>
                             
@@ -62,21 +61,11 @@
                                 <?php the_title(); ?>
                             </a>
                         </h3>
-                        
                     </div>
-                        
-                    <h3>
-                        <a href="<?php echo get_permalink($post)?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </h3>
-                    
-                </div>
-            <?php
+                <?php
             endif;
         endforeach; ?>
-
-        </div>
+    </div>
     </section>
     <?php endif;?>
 

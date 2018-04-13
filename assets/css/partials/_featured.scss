@@ -50,25 +50,6 @@
                 padding-top: 10px;
                 color: $color-text;
             }
-
-            .share{
-                text-transform: uppercase;
-
-                font-size: 0.8em;
-                font-weight: 700;
-                color: $color-separator-dark;
-
-
-                .fa{
-                    margin-right: 4px;
-                    padding: 8px;
-                    
-                    color: black;
-                    
-                    border: 1px solid $color-separator-dark;
-                    border-radius: 50%;
-                }
-            }
         }
     }
 

@@ -409,21 +409,6 @@ header .menu li a:hover {
   color: #777777;
 }
 
-.featured .post .content .share {
-  text-transform: uppercase;
-  font-size: 0.8em;
-  font-weight: 700;
-  color: #c5c5c5;
-}
-
-.featured .post .content .share .fa {
-  margin-right: 4px;
-  padding: 8px;
-  color: black;
-  border: 1px solid #c5c5c5;
-  border-radius: 50%;
-}
-
 .latest {
   margin-bottom: 32px;
   overflow: auto;
@@ -696,7 +681,7 @@ footer #button-scroll-up {
   color: white;
   background-color: #3a3e43;
   transition: color 0.3s, background-color 0.3s;
-  position: absolute;
+  position: fixed;
   bottom: 24px;
   right: 24px;
   width: 45px;
@@ -1019,35 +1004,58 @@ footer #button-scroll-up .fa {
 * Author: Team-Six
 * Version V.0.8
 */
+.navbar {
+  background: white;
+  border-bottom: 1px solid black;
+  text-align: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.navbar #home {
+  text-align: center;
+  margin-left: 125px;
+  font-family: "Crimson Text", serif;
+  margin-bottom: -100px;
+}
+
+@media screen and (orientation: portrait) {
+  .navbar #home {
+    margin-left: 129px;
+  }
+}
+
 .responsive-container {
   text-align: center;
   display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #777777;
+  margin-left: 20px;
+}
+
+a:hover {
+  color: #ff946a;
+  text-decoration: none;
 }
 
 #menuToggle {
   display: block;
   position: relative;
   z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #menuToggle .title {
   color: #777777;
-  font-size: 1.75rem;
   font-weight: 400;
   text-align: center;
-  margin-top: -4vh;
-}
-
-#menuToggle a {
-  text-decoration: none;
-  transition: color 0.3s ease;
-  color: white;
-  margin-left: 20px;
-}
-
-#menuToggle a:hover {
-  color: #ff946a;
-  text-decoration: none;
+  margin-bottom: -25px;
+  font-size: 1.75em !important;
+  margin-left: -55px;
 }
 
 #menuToggle input {
@@ -1058,33 +1066,50 @@ footer #button-scroll-up .fa {
   cursor: pointer;
   opacity: 0;
   z-index: 2;
+  -webkit-touch-callout: none;
 }
 
 #menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(0px, 0px);
   background: #ff8d6a;
   display: block;
+  opacity: 1;
+  transform: rotate(45deg) translate(-0.5px, -2px);
 }
 
-#menuToggle input:checked ~ span:nth-child(2) {
+@media screen and (orientation: portrait) {
+  #menuToggle input:checked ~ span {
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+}
+
+#menuToggle input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg) translate(-3.5px, 2px);
+}
+
+@media screen and (orientation: portrait) {
+  #menuToggle input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(-4.5px, 0.5px);
+  }
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
   opacity: 0;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  transform: rotate(-45deg) translate(2%, 2%);
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 #menuToggle span {
   display: block;
-  width: 30px;
+  width: 25px;
   height: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   position: relative;
   background: #777777;
   border-radius: 3px;
   z-index: 1;
   left: 5vh;
+  text-align: center;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menuToggle span:nth-last-child(3) {
@@ -1118,5 +1143,66 @@ footer #button-scroll-up .fa {
 #TB_window form {
   text-align: center;
   margin-top: 150px;
+}
+
+.share {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #c5c5c5;
+}
+
+.share .fa {
+  margin-right: 4px;
+  padding: 8px;
+  border: 1px solid #c5c5c5;
+  border-radius: 50%;
+}
+
+.share a {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  padding: 8px;
+  width: 30px;
+  color: white;
+  opacity: 0;
+  transition: background 1s, opacity 1s, left 1s;
+}
+
+.share:hover a {
+  opacity: 1;
+  opacity: 1;
+}
+
+.share:hover a:nth-child(2) {
+  left: 85px;
+  color: white;
+  text-align: center;
+  background-color: #899dce;
+}
+
+.share:hover a:nth-child(3) {
+  left: 120px;
+  color: white;
+  text-align: center;
+  background-color: #60d2f5;
+}
+
+.share:hover a:nth-child(4) {
+  left: 155px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.single {
+  text-align: center;
+  width: 100vw;
+  left: 0;
+  background-color: beige;
+  position: absolute;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

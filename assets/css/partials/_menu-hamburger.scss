@@ -3,36 +3,53 @@
 * Author: Team-Six
 * Version V.0.8
 */
-.responsive-container{
+
+.navbar {
+    background: white;
+    border-bottom: 1px solid black;
+    text-align: center;
+    display: flex;
+    padding-bottom: 20px;
+    #home {
+        text-align: center;
+        margin-left: 125px;
+        font-family: $font-crimson;
+        margin-bottom: -100px;
+        @media #{$smartphone-portrait} {
+            margin-left: 129px;
+        }
+    }
+}
+
+.responsive-container {
     text-align: center;
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text;
+    margin-left: 20px;
+    &:hover {
+        color: #ff946a;
+        text-decoration: none;
+    }
 }
 
 #menuToggle {
     display: block;
     position: relative;
     z-index: 1;
-
+    -webkit-user-select: none;
+    user-select: none;
     .title {
         color: $color-text;
-        font-size: 1.75rem;
         font-weight: 400;
         text-align: center;
-        margin-top: -4vh;
+        margin-bottom: -25px;
+        font-size: 1.75em !important;
+        margin-left: -55px;
     }
-
-    a {
-        text-decoration: none;
-        transition: color 0.3s ease;
-        color: white;
-        margin-left: 20px;
-    
-        &:hover {
-            color: #ff946a;
-            text-decoration: none;
-        }
-    }
-    
     input {
         display: block;
         width: 30%;
@@ -41,34 +58,40 @@
         cursor: pointer;
         opacity: 0;
         z-index: 2;
-        
+        -webkit-touch-callout: none;
         &:checked~span {
-            opacity: 1;
-            transform: rotate(45deg) translate(-0px, -0px);
             background: $color-orange;
             display: block;
-
-            &:nth-child(2) {
-                opacity: 0;
+            opacity: 1;
+            transform: rotate(45deg) translate(-0.5px, -2px);
+            @media #{$smartphone-portrait} {
+                transform: rotate(45deg) translate(-2px, -1px);
             }
-            &:nth-last-child(3) {
-                transform: rotate(-45deg) translate(2%, 2%);
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(-3.5px, 2px);
+                @media #{$smartphone-portrait} {
+                    transform: rotate(-45deg) translate(-4.5px, 0.5px);
+                }
+            }
+            &:nth-last-child(2) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
             }
         }
-
     }
-
     span {
         display: block;
-        width: 30px;
+        width: 25px;
         height: 3px;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
         position: relative;
         background: $color-text;
         border-radius: 3px;
         z-index: 1;
         left: 5vh;
-
+        text-align: center;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
         &:nth-last-child(3) {
             transform-origin: 10% 0%;
         }
@@ -86,7 +109,6 @@
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    
     li {
         padding: 8px 0;
         font-size: 3vh;
@@ -99,14 +121,11 @@
     text-decoration: none;
 }
 
-#TB_window
-{
-
-    form
-    {
+#TB_window {
+    form {
         text-align: center;
         margin-top: 150px;
     }
-    
 }
+
 // }

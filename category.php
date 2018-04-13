@@ -5,7 +5,7 @@
     get_header(); 
 ?>
 <main>
-<h2><?php single_cat_title(); ?></h2>
+<h2 class="single"><?php single_cat_title(); ?></h2>
 <section class="featured">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -21,18 +21,16 @@
 	</div>
 
 		<div class="content">
-		<h2>
-			<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+		
 
 			                        <div class="category"><?php the_category(' '); ?></div>
 
-				<?php the_title(); ?>
-			</a>
-		</h2>
-		<small>
-			<?php the_time('F jS, Y'); ?> 
-			<?php the_author_posts_link(); ?>
-		</small>
+				<h3 class="title">
+					<?php the_title(); ?>
+				</h3>
+		
+		</div>	
+		
 		<?php 
                                 $text = get_the_excerpt($post);
                                 $text = wp_trim_words( $text, 22, "..." ); 

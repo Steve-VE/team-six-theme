@@ -256,6 +256,7 @@ header .menu li a:hover {
   height: auto;
   overflow: auto;
   margin-bottom: 32px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .home h2 {
@@ -264,6 +265,7 @@ header .menu li a:hover {
 }
 
 .home h3 {
+  font-weight: 800;
   padding-top: 18px;
   padding-bottom: 24px;
   text-align: left;
@@ -485,6 +487,7 @@ footer {
 
 footer .container-responsive {
   display: block;
+  width: 100%;
 }
 
 footer .container-responsive .row {
@@ -558,7 +561,7 @@ footer .container-responsive .row .popular article {
     width: 100px;
     height: auto;
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   footer .container-responsive .row .popular article a {
     font-weight: 800;
@@ -1203,5 +1206,32 @@ footer #button-scroll-up .fa {
   background-color: beige;
   position: absolute;
   display: block;
+}
+
+.sidebar {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 70px;
+}
+
+@media screen and (orientation: portrait) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar img {
+  margin-top: 70px;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar .ssb_button {
+  margin: 0 !important;
+  margin-bottom: 2px !important;
+  border-radius: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */

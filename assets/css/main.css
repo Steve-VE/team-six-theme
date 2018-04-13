@@ -1199,13 +1199,21 @@ footer #button-scroll-up .fa {
   background-color: black;
 }
 
-.single {
+.single-box {
+  width: 100%;
+}
+
+.single-box .single {
+  background-color: #f7f7f7;
   text-align: center;
-  width: 100vw;
-  left: 0;
-  background-color: beige;
-  position: absolute;
   display: block;
+  margin-bottom: 5px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.single-box .single h2 {
+  margin-top: 5px;
 }
 
 .sidebar {

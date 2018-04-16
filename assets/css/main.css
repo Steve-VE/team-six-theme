@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* TEAM SIX COLORS*/
 /* TEAM SIX FONTS */
 /* Open Sans - font weights available: 400 600 600 800 */
@@ -277,8 +278,9 @@ header .menu li a:hover {
   margin-right: 1%;
 }
 
-.home .main_article > img {
-  margin-right: 25px;
+.home .main_article .image-container {
+  width: 100%;
+  height: 40vh;
 }
 
 .home .main_article .category {
@@ -286,7 +288,7 @@ header .menu li a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (orientation: portrait) {
   .home .main_article {
     float: none;
     width: 100%;
@@ -300,7 +302,7 @@ header .menu li a:hover {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (orientation: portrait) {
   .home .secondary_articles {
     width: 100%;
   }
@@ -324,20 +326,37 @@ header .menu li a:hover {
   }
 }
 
-.home .post img, .featured .post img, .latest .post img {
+.home .secondary_articles .post .image-container {
+  height: 20vh;
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  /* Trick trouvé sur internet pour centrer une image plus grande que 
+        son conteneur par rapport à celui-ci, peu importe leurs tailles */
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  width: auto;
+  height: 100%;
+}
+
+.home .post img, .featured .post img, .section-category .post img, .latest .post img {
   image-rendering: pixelated;
   transition: opacity .3s ease-in-out;
   -moz-transition: opacity .3s ease-in-out;
   -webkit-transition: opacity .3s ease-in-out;
 }
 
-.home .post:hover img, .featured .post:hover img, .latest .post:hover img {
+.home .post:hover img, .featured .post:hover img, .section-category .post:hover img, .latest .post:hover img {
   opacity: 0.7;
-}
-
-.post img:not(.avatar) {
-  width: 100%;
-  height: auto;
 }
 
 .featured_posts {
@@ -384,7 +403,7 @@ header .menu li a:hover {
   color: #3f3f3f;
 }
 
-.featured .post {
+.featured .post, .section-category .post {
   overflow: auto;
   width: 100%;
   padding: 24px 0;
@@ -392,42 +411,38 @@ header .menu li a:hover {
   border-bottom: 1px solid #f2f2f2;
 }
 
-.featured .post:last-child {
+.featured .post:last-child, .section-category .post:last-child {
   border-bottom-style: none;
 }
 
-.featured .post .image-container {
+.featured .post .image-container, .section-category .post .image-container {
   width: 48%;
+  height: 20vh;
   margin-right: 4%;
   float: left;
 }
 
-.featured .post .image-container img {
-  width: 100%;
-  height: auto;
-}
-
-.featured .post .content {
+.featured .post .content, .section-category .post .content {
   width: 47%;
   float: right;
 }
 
-.featured .post .content .category a {
+.featured .post .content .category a, .section-category .post .content .category a {
   padding-right: 12px;
 }
 
-.featured .post .content .category a:last-child {
+.featured .post .content .category a:last-child, .section-category .post .content .category a:last-child {
   border-right: 1px solid #c5c5c5;
 }
 
-.featured .post .content .title {
+.featured .post .content .title, .section-category .post .content .title {
   margin: 20px 0;
   padding-right: 12px;
   border-right: 1px solid #f2f2f2;
   border: none;
 }
 
-.featured .post .content p {
+.featured .post .content p, .section-category .post .content p {
   padding-top: 10px;
   color: #777777;
 }
@@ -463,11 +478,6 @@ header .menu li a:hover {
   height: 248px;
   overflow: hidden;
   text-align: center;
-}
-
-.latest .post .image-container img {
-  width: auto;
-  height: 100%;
 }
 
 .latest .post .image-container, .latest .post .category, .latest .post p, .latest .post h3 {
@@ -1199,21 +1209,27 @@ footer #button-scroll-up .fa {
   background-color: black;
 }
 
-.single-box {
+.single {
   width: 100%;
-}
-
-.single-box .single {
-  background-color: #f7f7f7;
-  text-align: center;
-  display: block;
-  margin-bottom: 5px;
   height: 60px;
+  position: absolute;
+  left: 0;
+  background-color: #f7f7f7;
+  margin-bottom: 5px;
   line-height: 60px;
+  text-align: center;
 }
 
-.single-box .single h2 {
+.single h2 {
   margin-top: 5px;
+}
+
+.section-category {
+  margin-top: 100px;
+}
+
+.section-category.post:first-child {
+  padding-top: 500px;
 }
 
 .sidebar {

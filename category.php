@@ -4,38 +4,39 @@
  */
     get_header(); 
 ?>
+<h2 class="single">
+	<?php single_cat_title(); ?>
+</h2>
 <main>
-	<div class="single-box"><h2 class="single"><?php single_cat_title(); ?></h2></div>
-	<section class="featured">
+
+	<section class="section-category">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-
-
 		<div class="post">
 			<div class="image-container">
 				<a href="<?php echo get_permalink($post)?>">
-            	<?php if(has_post_thumbnail()){
-            		the_post_thumbnail();
-        		 } ?>
+					<?php if(has_post_thumbnail()){
+						the_post_thumbnail();
+					} ?>
                 </a>
 			</div>
 
 			<div class="content">
 		
-				<div class="category"><?php the_category(' '); ?></div>
+				<div class="category">
+					<?php the_category(' '); ?>
+				</div>
 
-					<h3 class="title">
+				<h3 class="title">
 					<?php the_title(); ?>
-					</h3>
-		
-				</div>	
-		
-				<?php 
-				$text = get_the_excerpt($post);
-				$text = wp_trim_words( $text, 22, "..." ); 
-				echo $text;
-				?>
-    
+				</h3>
+
+				<p>
+					<?php 
+						$text = get_the_excerpt($post);
+						$text = wp_trim_words( $text, 22, "..." ); 
+						echo $text;
+					?>
+				</p>
 				<a href="" class="share"><i class="fa fa-share"></i> share</a>
 
 			</div>

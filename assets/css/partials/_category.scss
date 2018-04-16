@@ -1,22 +1,30 @@
 
-.single-box
+.single
 {
     width: 100%;
-    .single
+    height: 60px;
+    position: absolute;
+    left: 0;
+    
+    background-color:#f7f7f7;
+    margin-bottom: 5px;
+    line-height: 60px;
+    text-align: center;
+    
+    h2
     {
-        background-color:#f7f7f7;
-        text-align: center;
-        display: block;
-        margin-bottom: 5px;
-        height: 60px;
-        line-height: 60px;
-        
-        h2
-        {
-           
-            margin-top: 5px;
-        }
+        margin-top: 5px;
     }
-
 }
 
+
+.section-category{
+    &.post:first-child{
+        // margin-top: 1000px;
+        padding-top: 500px;
+    }
+
+    @extend .featured;
+    margin-top: 100px;
+    
+}

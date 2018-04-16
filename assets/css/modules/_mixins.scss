@@ -90,3 +90,23 @@
         opacity: 0.7;
     }
 }
+
+
+@mixin image-container{
+    overflow: hidden;
+    position: relative;
+
+    img{
+        /* Trick trouvé sur internet pour centrer une image plus grande que 
+        son conteneur par rapport à celui-ci, peu importe leurs tailles */
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+
+        width: auto;
+        height: 100%;
+    }
+}

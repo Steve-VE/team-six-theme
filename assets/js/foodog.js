@@ -28,13 +28,34 @@ window.onload = function(){
     }
 };//*/
 
+let allPosts;
+
 
 window.onload = () => {
+    allPosts = document.querySelectorAll(".post");
+    console.log(allPosts);
 
-    let bibi = 0;
-    do{
-        console.log(bibi);
-    }while((++bibi) < 5 );
+    window.setInterval(lookForPost, 10);
+    lookForPost();
 };
+
+
+
+function lookForPost(){
+    let screenValue = window.scrollY + (window.innerHeight * 0.9);
+
+    for(let i = allPosts.length - 1; i >= 0; i--){
+        let currentPost = allPosts[i];
+        if(currentPost.offsetTop < screenValue){
+            let style = window.getComputedStyle(currentPost);
+            let opacity = parseFloat(style.getPropertyValue("opacity"));
+
+            if(opacity < 1){
+                opacity += 0.01;
+                currentPost.setAttribute("style", "opacity: " + opacity + ";");
+            }
+        }
+    }
+}
 
 

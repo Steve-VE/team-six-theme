@@ -112,6 +112,10 @@ section .right {
   float: right;
 }
 
+.post {
+  opacity: 0;
+}
+
 header {
   width: 100%;
   margin-top: 20px;

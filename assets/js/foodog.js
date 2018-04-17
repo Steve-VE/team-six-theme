@@ -29,3 +29,12 @@ window.onload = function(){
 };//*/
 
 
+window.onload = () => {
+
+    let bibi = 0;
+    do{
+        console.log(bibi);
+    }while((++bibi) < 5 );
+};
+
+
